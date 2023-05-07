@@ -17,14 +17,16 @@ params:
         imageWidth: 200 # custom size
         imageHeight: 200 # custom size
         buttons:
+            - name: About
+              url: "/about"
             - name: Resume
               url: "/files/resume.pdf"
-            - name: Blog
-              url: "/blog"
-            - name: Books
-              url: "/books"
-            - name: Movies
-              url: "/movies"
+            # - name: Blog
+            #   url: "/blog"
+            # - name: Books
+            #   url: "/books"
+            # - name: Movies
+            #   url: "/movies"
 
     socialIcons: # optional
         - name: "instagram"
