@@ -40,9 +40,9 @@ div.profile_inner img,
 .profile .profile_inner > img,
 .profile_inner > img,
 .profile > img {
-    border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
+    border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
     object-fit: contain !important;
     width: auto !important;
     height: auto !important;
@@ -55,18 +55,18 @@ div.profile_inner img,
 .profile,
 .profile_inner,
 .main .profile {
-    border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
+    border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
     overflow: visible !important;
 }
 
  
 * .profile img,
 * .profile_inner img {
-    border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
+    border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
 }
 
  
@@ -118,6 +118,58 @@ div.profile_inner img,
         max-width: 800px !important;
         max-height: 600px !important;
         width: auto !important;
+    }
+}
+
+ 
+.nav-buttons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-left: auto !important;
+}
+
+.nav-button {
+    background: transparent !important;
+    border-radius: 6px !important;
+    margin: 0 !important;
+    padding: 4px 12px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    color: var(--primary) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    min-width: 60px !important;
+    text-align: center !important;
+    border: 2px solid #000000 !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
+
+.nav-button:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+ 
+.profile .buttons {
+    display: none !important;
+}
+
+ 
+@media (max-width: 768px) {
+    .nav-buttons {
+        gap: 6px !important;
+    }
+    
+    .nav-button {
+        padding: 3px 8px !important;
+        font-size: 14px !important;
+        min-width: 50px !important;
     }
 }
 </style> <meta property="og:title" content="My First Post" />
@@ -222,9 +274,18 @@ Visit the Hugo website!"/>
         </div>
         <ul id="menu">
         </ul>
+        
+        
+        <div class="nav-buttons">
+            <a class="nav-button" href="/about" rel="noopener" title="About">
+                About
+            </a>
+            <a class="nav-button" href="/files/resume.pdf" rel="noopener" title="Resume">
+                Resume
+            </a>
+        </div>
     </nav>
-</header>
-<main class="main">
+</header> <main class="main">
 
 <article class="post-single">
   <header class="post-header">

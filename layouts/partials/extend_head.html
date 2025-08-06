@@ -89,4 +89,56 @@ div.profile_inner img,
         width: auto !important;
     }
 }
+
+/* Navigation buttons in header */
+.nav-buttons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-left: auto !important;
+}
+
+.nav-button {
+    background: transparent !important;
+    border-radius: 6px !important;
+    margin: 0 !important;
+    padding: 4px 12px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    color: var(--primary) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    min-width: 60px !important;
+    text-align: center !important;
+    border: 2px solid #000000 !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
+
+.nav-button:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Hide original buttons in profile */
+.profile .buttons {
+    display: none !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .nav-buttons {
+        gap: 6px !important;
+    }
+    
+    .nav-button {
+        padding: 3px 8px !important;
+        font-size: 14px !important;
+        min-width: 50px !important;
+    }
+}
 </style> 
