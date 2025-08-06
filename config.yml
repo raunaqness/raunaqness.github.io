@@ -20,7 +20,7 @@ params:
             - name: About
               url: "/about"
             - name: Resume
-              url: "/files/resume.pdf"
+              url: "/files/resume.pdf?v=2"
             # - name: Blog
             #   url: "/blog"
             # - name: Books
