@@ -12,10 +12,10 @@ params:
         enabled: true
         title: "Raunaq Singh" # optional default will be site title
         subtitle: "Software Engineer | Consultant | Coffee Enthusiast"
-        imageUrl: "/images/dp-blurred.jpg" # optional
+        imageUrl: "/images/bhutan.jpg" # optional
         imageTitle: "dp" # optional
-        imageWidth: 200 # custom size
-        imageHeight: 200 # custom size
+        # imageWidth: 200 # custom size - removed to allow natural aspect ratio
+        # imageHeight: 200 # custom size - removed to allow natural aspect ratio
         buttons:
             - name: About
               url: "/about"
