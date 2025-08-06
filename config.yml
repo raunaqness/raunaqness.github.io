@@ -2,7 +2,7 @@ baseURL : 'https://raunaqness.com'
 languageCode : 'en-us'
 title : 'raunaqness.com'
 theme : 'PaperMod'
-publishDir : "public"
+publishDir : "."
 staticDir:
 - staticfiles
 params:
