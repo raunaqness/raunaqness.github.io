@@ -99,6 +99,25 @@ raunaqness.github.io/
 - **Images**: Place in `staticfiles/images/` and reference as `/images/filename.jpg`
 - **Documents**: Place in `staticfiles/files/` and reference as `/files/filename.pdf`
 
+## 🎨 Customization
+
+### CSS and JavaScript Customizations
+
+**IMPORTANT**: Hugo uses template files, not static HTML files. For CSS and JavaScript customizations:
+
+- **CSS Customizations**: Edit `layouts/partials/extend_head.html`
+- **JavaScript**: Add to `layouts/partials/extend_head.html` or create new partial files
+- **Template Overrides**: Place files in `layouts/` directory to override theme templates
+
+**⚠️ Key Discovery**: Hugo serves from template files in `layouts/partials/`, NOT from the static `index.html` file. Always edit the template files for changes to take effect.
+
+### Recent Customizations
+
+- **Navigation Buttons**: Added custom navigation buttons in header
+- **Mobile Menu**: Added hamburger menu with dropdown for mobile
+- **Profile Image**: Customized profile image styling (rounded corners instead of circular)
+- **Mobile Menu Margin**: Added 14px margin to mobile menu container for proper spacing
+
 ### Updating Profile Information
 
 1. **Profile Mode Settings**: Edit `config.yml` under `params.profileMode`
