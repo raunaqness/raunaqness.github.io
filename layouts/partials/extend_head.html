@@ -233,17 +233,27 @@ div.profile_inner img,
     }
 }
 
-/* JavaScript for mobile menu */
+}
+</style>
+
+<!-- JavaScript for mobile menu -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const mobileDropdown = document.getElementById('mobile-dropdown');
     const mobileNavButtons = document.querySelectorAll('.mobile-nav-button');
     
+    // Debug: Check if elements exist
+    console.log('Hamburger menu found:', hamburgerMenu);
+    console.log('Mobile dropdown found:', mobileDropdown);
+    console.log('Mobile nav buttons found:', mobileNavButtons.length);
+    
     // Toggle mobile menu
     hamburgerMenu.addEventListener('click', function() {
+        console.log('Hamburger clicked!');
         hamburgerMenu.classList.toggle('active');
         mobileDropdown.classList.toggle('active');
+        console.log('Menu toggled. Active:', mobileDropdown.classList.contains('active'));
     });
     
     // Close menu when clicking on a menu item
@@ -272,5 +282,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-</script>
-</style> 
+</script> 

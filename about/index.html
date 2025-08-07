@@ -266,7 +266,10 @@ div.profile_inner img,
     }
 }
 
- 
+}
+</style>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -274,9 +277,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNavButtons = document.querySelectorAll('.mobile-nav-button');
     
     
+    console.log('Hamburger menu found:', hamburgerMenu);
+    console.log('Mobile dropdown found:', mobileDropdown);
+    console.log('Mobile nav buttons found:', mobileNavButtons.length);
+    
+    
     hamburgerMenu.addEventListener('click', function() {
+        console.log('Hamburger clicked!');
         hamburgerMenu.classList.toggle('active');
         mobileDropdown.classList.toggle('active');
+        console.log('Menu toggled. Active:', mobileDropdown.classList.contains('active'));
     });
     
     
@@ -305,8 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-</script>
-</style> <meta property="og:title" content="About" />
+</script> <meta property="og:title" content="About" />
 <meta property="og:description" content="I&rsquo;m Raunaq, I like to talk about technology, programming, food, sports, photography (and some other things).
 I currently live in Bengaluru and work as Associate Principal ML Engineer at Revionics.
 Here&rsquo;s a non-exhaustive list of stuff I&rsquo;ve done over the years, each condensed to a single sentence:

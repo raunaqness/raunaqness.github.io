@@ -261,7 +261,10 @@ div.profile_inner img,
     }
 }
 
- 
+}
+</style>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -269,9 +272,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNavButtons = document.querySelectorAll('.mobile-nav-button');
     
     
+    console.log('Hamburger menu found:', hamburgerMenu);
+    console.log('Mobile dropdown found:', mobileDropdown);
+    console.log('Mobile nav buttons found:', mobileNavButtons.length);
+    
+    
     hamburgerMenu.addEventListener('click', function() {
+        console.log('Hamburger clicked!');
         hamburgerMenu.classList.toggle('active');
         mobileDropdown.classList.toggle('active');
+        console.log('Menu toggled. Active:', mobileDropdown.classList.contains('active'));
     });
     
     
@@ -300,8 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-</script>
-</style> <meta property="og:title" content="404 Page not found" />
+</script> <meta property="og:title" content="404 Page not found" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://raunaqness.github.io/404.html" />
