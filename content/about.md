@@ -4,7 +4,7 @@ draft: false
 ---
 ![Alt text](/images/bhutan.jpg)
 
-I'm Raunaq, I love to [travel](/travel), [food](/food), [technology](/proof-of-work) (in that order) ([and some other things](/elements)).
+I'm Raunaq, I love [travel](/travel), [food](/food), and [technology](/proof-of-work) (in that order) ([and some other things](/elements)).
 
 I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
 
