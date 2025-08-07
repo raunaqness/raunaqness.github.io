@@ -4,7 +4,7 @@ draft: false
 ---
 ![Alt text](/images/bhutan.jpg)
 
-{{< photo-credit "[Danish Prakash]([link-to-author](https://danishpraka.sh/))" >}}
+{{< photo-credit "[Danish Prakash](https://danishpraka.sh/)" >}}
 
 ---
 I'm Raunaq, I love [travel](/travel), [food](/food), and [technology](/proof-of-work) (in that order) ([and some other things](/elements)).
