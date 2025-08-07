@@ -146,9 +146,9 @@
             {{- end }}
         </ul>
         
-        <!-- Navigation buttons in nav -->
+        <!-- Navigation buttons in nav (desktop) -->
         {{- with site.Params.profileMode.buttons }}
-        <div class="nav-buttons">
+        <div class="nav-buttons desktop-nav">
             {{- range . }}
             <a class="nav-button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
                 {{ .name }}
@@ -164,5 +164,33 @@
             {{- end }}
         </div>
         {{- end }}
+
+        <!-- Mobile hamburger menu -->
+        <div class="mobile-menu-container">
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Mobile dropdown menu -->
+            <div class="mobile-dropdown" id="mobile-dropdown">
+                {{- with site.Params.profileMode.buttons }}
+                {{- range . }}
+                <a class="mobile-nav-button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </a>
+                {{- end }}
+                {{- end }}
+            </div>
+        </div>
     </nav>
 </header> 

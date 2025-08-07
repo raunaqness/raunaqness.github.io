@@ -158,7 +158,98 @@ div.profile_inner img,
 }
 
  
+.mobile-menu-container {
+    display: none !important;
+    position: relative !important;
+}
+
+.hamburger-menu {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+    z-index: 1001 !important;
+}
+
+.hamburger-line {
+    width: 100% !important;
+    height: 3px !important;
+    background-color: var(--primary) !important;
+    border-radius: 2px !important;
+    transition: all 0.3s ease !important;
+    transform-origin: center !important;
+}
+
+ 
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px) !important;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0 !important;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px) !important;
+}
+
+.mobile-dropdown {
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 2px solid #000000 !important;
+    border-radius: 8px !important;
+    padding: 8px 0 !important;
+    min-width: 120px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(-10px) !important;
+    transition: all 0.3s ease !important;
+    z-index: 1000 !important;
+}
+
+.mobile-dropdown.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.mobile-nav-button {
+    display: block !important;
+    padding: 8px 16px !important;
+    text-decoration: none !important;
+    color: var(--primary) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    transition: background-color 0.2s ease !important;
+    border: none !important;
+    background: transparent !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.mobile-nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+ 
 @media (max-width: 768px) {
+    .desktop-nav {
+        display: none !important;
+    }
+    
+    .mobile-menu-container {
+        display: block !important;
+    }
+    
     .nav-buttons {
         gap: 6px !important;
     }
@@ -169,6 +260,47 @@ div.profile_inner img,
         min-width: 50px !important;
     }
 }
+
+ 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mobileDropdown = document.getElementById('mobile-dropdown');
+    const mobileNavButtons = document.querySelectorAll('.mobile-nav-button');
+    
+    
+    hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('active');
+        mobileDropdown.classList.toggle('active');
+    });
+    
+    
+    mobileNavButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            hamburgerMenu.classList.remove('active');
+            mobileDropdown.classList.remove('active');
+        });
+    });
+    
+    
+    document.addEventListener('click', function(event) {
+        const isClickInside = hamburgerMenu.contains(event.target) || mobileDropdown.contains(event.target);
+        
+        if (!isClickInside && mobileDropdown.classList.contains('active')) {
+            hamburgerMenu.classList.remove('active');
+            mobileDropdown.classList.remove('active');
+        }
+    });
+    
+    
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            hamburgerMenu.classList.remove('active');
+            mobileDropdown.classList.remove('active');
+        }
+    });
+});
+</script>
 </style> <meta property="og:title" content="404 Page not found" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -219,13 +351,32 @@ div.profile_inner img,
         </ul>
         
         
-        <div class="nav-buttons">
+        <div class="nav-buttons desktop-nav">
             <a class="nav-button" href="/about" rel="noopener" title="About">
                 About
             </a>
             <a class="nav-button" href="/files/resume.pdf?v=2" rel="noopener" title="Resume">
                 Resume
             </a>
+        </div>
+
+        
+        <div class="mobile-menu-container">
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            
+            <div class="mobile-dropdown" id="mobile-dropdown">
+                <a class="mobile-nav-button" href="/about" rel="noopener" title="About">
+                    About
+                </a>
+                <a class="mobile-nav-button" href="/files/resume.pdf?v=2" rel="noopener" title="Resume">
+                    Resume
+                </a>
+            </div>
         </div>
     </nav>
 </header> <main class="main">
