@@ -1,5 +1,7 @@
 <!-- Preload critical images -->
-<link rel="preload" as="image" href="/images/bhutan.jpg">
+<link rel="preload" as="image" href="/images/bhutan.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/bhutan.jpg" media="(max-width: 768px)">
+<link rel="dns-prefetch" href="//raunaqness.github.io">
 
 <style>
 /* Override PaperMod theme's circular profile image */
@@ -21,6 +23,9 @@ div.profile_inner img,
     max-width: 400px !important;
     max-height: 400px !important;
     display: inline-block !important;
+    /* Force immediate loading and prevent layout shift */
+    loading: eager !important;
+    decoding: sync !important;
 }
 
 /* Also override any container styling */

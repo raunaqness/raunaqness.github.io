@@ -1,0 +1,9 @@
+{{- /* Preload critical images for faster loading */ -}}
+<link rel="preload" as="image" href="/images/bhutan.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/bhutan.jpg" media="(max-width: 768px)">
+<link rel="dns-prefetch" href="//raunaqness.github.io">
+<link rel="preconnect" href="//raunaqness.github.io">
+<link rel="preload" as="image" href="/images/bhutan.jpg" type="image/jpeg">
+
+{{- /* Include the original PaperMod head content */ -}}
+{{- partial "head-original.html" . -}} 
