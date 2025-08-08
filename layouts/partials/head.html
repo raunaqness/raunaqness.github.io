@@ -1,9 +1,18 @@
 {{- /* Preload critical images for faster loading */ -}}
-<link rel="preload" as="image" href="/images/bhutan.jpg" fetchpriority="high">
-<link rel="preload" as="image" href="/images/bhutan.jpg" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/bhutan.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/bhutan.webp" type="image/webp" media="(max-width: 768px)">
 <link rel="dns-prefetch" href="//raunaqness.github.io">
 <link rel="preconnect" href="//raunaqness.github.io">
-<link rel="preload" as="image" href="/images/bhutan.jpg" type="image/jpeg">
+<link rel="preload" as="image" href="/images/bhutan.webp" type="image/webp">
+
+{{- /* Preload food page images */ -}}
+{{- if eq .RelPermalink "/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/" }}
+<link rel="preload" as="image" href="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india.webp" type="image/webp">
+<link rel="preload" as="image" href="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india-2.webp" type="image/webp">
+{{- end }}
+{{- if eq .RelPermalink "/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/" }}
+<link rel="preload" as="image" href="/images/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india.webp" type="image/webp">
+{{- end }}
 
 {{- /* Google Analytics */ -}}
 {{- if and hugo.IsProduction site.Params.googleAnalytics }}
