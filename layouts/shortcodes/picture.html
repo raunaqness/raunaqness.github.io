@@ -1,0 +1,4 @@
+<picture>
+  <source srcset="{{ .Get "webp" }}" type="image/webp">
+  <img src="{{ .Get "jpg" }}" alt="{{ .Get "alt" }}" loading="{{ .Get "loading" | default "lazy" }}" decoding="{{ .Get "decoding" | default "async" }}">
+</picture>

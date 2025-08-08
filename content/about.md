@@ -2,10 +2,7 @@
 title: "About"
 draft: false
 ---
-<picture>
-  <source srcset="/images/bhutan.webp" type="image/webp">
-  <img src="/images/bhutan.jpg" alt="Bhutan landscape" loading="eager" decoding="sync">
-</picture>
+{{< picture webp="/images/bhutan.webp" jpg="/images/bhutan.jpg" alt="Bhutan landscape" loading="eager" decoding="sync" >}}
 
 {{< photo-credit "[Danish Prakash](https://danishpraka.sh/)" >}}
 
