@@ -1,46 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>raunaqness.com</title>
-    <link>https://raunaqness.github.io/</link>
-    <description>Recent content on raunaqness.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="https://raunaqness.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Food</title>
-      <link>https://raunaqness.github.io/food/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0530</pubDate>
-      
-      <guid>https://raunaqness.github.io/food/</guid>
-      <description>Food Adventures Welcome to my food journey! I love exploring different cuisines, cooking, and sharing my culinary experiences.
-Recent Food Adventures Coming soon&amp;hellip;
-Favorite Cuisines Indian (especially street food) Italian Thai Mediterranean Japanese Cooking Experiments I enjoy experimenting in the kitchen and trying new recipes. Here are some of my recent experiments:
-More content coming soon&amp;hellip;
-Restaurant Reviews I love discovering new restaurants and sharing my experiences. Here are some of my favorite finds:</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://raunaqness.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
-      
-      <guid>https://raunaqness.github.io/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://raunaqness.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/about/</guid>
-      <description>Photo credit: Danish Prakash I&amp;rsquo;m Raunaq, I love travel, food, and technology (in that order) (and some other things).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>raunaqness.com</title><link>https://raunaqness.github.io/</link><description>Recent content on raunaqness.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0530</lastBuildDate><atom:link href="https://raunaqness.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Pad Thai - Thip Samai, Bangkok</title><link>https://raunaqness.github.io/food/pad-thai-thip-samai-bangkok/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0530</pubDate><guid>https://raunaqness.github.io/food/pad-thai-thip-samai-bangkok/</guid><description>Pad Thai at Thip Samai, Bangkok The dish that made me fall in love with Thai street food all over again.
+The Experience Your story about discovering this dish, what makes it special, and your memories of eating it here&amp;hellip;
+What Makes It Special Describe the unique aspects of this particular Pad Thai - the flavors, textures, cooking technique, etc.
+The Restaurant About Thip Samai - the atmosphere, the staff, the location, why you keep coming back&amp;hellip;</description></item><item><title>My First Post</title><link>https://raunaqness.github.io/posts/my-first-post/</link><pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate><guid>https://raunaqness.github.io/posts/my-first-post/</guid><description>Introduction This is bold text, and this is emphasized text.
+Visit the Hugo website!</description></item><item><title>About</title><link>https://raunaqness.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/about/</guid><description>Photo credit: Danish Prakash I&amp;rsquo;m Raunaq, I love travel, food, and technology (in that order) (and some other things).
 I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
 Here&amp;rsquo;s a non-exhaustive list of stuff I&amp;rsquo;ve done over the years, each condensed to a single sentence:
-[2025-Present] Exploring AI Agents, MCP servers, and building side projects to become better at using LLM based tools while contributing to open source.</description>
-    </item>
-    
-  </channel>
-</rss>
+[2025-Present] Exploring AI Agents, MCP servers, and building side projects to become better at using LLM based tools while contributing to open source.</description></item><item><title>Food</title><link>https://raunaqness.github.io/food/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/food/</guid><description>These are my culinary love stories—dishes so extraordinary they&amp;rsquo;ve made me a romantic, returning to the same restaurants until the menu feels like poetry and the staff like family.
+Pad Thai, Thip Samai, Bangkok</description></item></channel></rss>

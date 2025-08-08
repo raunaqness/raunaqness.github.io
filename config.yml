@@ -8,6 +8,7 @@ staticDir:
 params:
     defaultTheme: light
     disableThemeToggle: false
+    googleAnalytics: "G-WE06JCZYNP"  # Replace with your actual GA4 Measurement ID
     profileMode:
         enabled: true
         title: "Raunaq Singh" # optional default will be site title

@@ -5,5 +5,17 @@
 <link rel="preconnect" href="//raunaqness.github.io">
 <link rel="preload" as="image" href="/images/bhutan.jpg" type="image/jpeg">
 
+{{- /* Google Analytics */ -}}
+{{- if and hugo.IsProduction site.Params.googleAnalytics }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Params.googleAnalytics }}');
+</script>
+{{- end }}
+
 {{- /* Include the original PaperMod head content */ -}}
 {{- partial "head-original.html" . -}} 

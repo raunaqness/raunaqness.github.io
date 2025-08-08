@@ -1,37 +1,9 @@
 ---
 title: "Food"
-date: 2024-01-01T00:00:00+05:30
 draft: false
 ---
 
-# Food Adventures
+These are my culinary love stories—dishes so extraordinary they've made me a romantic, returning to the same restaurants until the menu feels like poetry and the staff like family.
 
-Welcome to my food journey! I love exploring different cuisines, cooking, and sharing my culinary experiences.
+- [Pad Thai, Thip Samai, Bangkok](/food/pad-thai-thip-samai-bangkok)
 
-## Recent Food Adventures
-
-*Coming soon...*
-
-## Favorite Cuisines
-
-- Indian (especially street food)
-- Italian
-- Thai
-- Mediterranean
-- Japanese
-
-## Cooking Experiments
-
-I enjoy experimenting in the kitchen and trying new recipes. Here are some of my recent experiments:
-
-*More content coming soon...*
-
-## Restaurant Reviews
-
-I love discovering new restaurants and sharing my experiences. Here are some of my favorite finds:
-
-*Reviews coming soon...*
-
----
-
-*This page is a work in progress. More food content coming soon!* 
