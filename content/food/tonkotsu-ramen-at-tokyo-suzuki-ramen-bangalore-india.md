@@ -7,7 +7,7 @@ Ever since my 2023 trip to Japan, I’ve been on a mission to find that same ram
 
 The first time I tried their **pork-based Tonkotsu Ramen**, I was hooked. Rich, silky broth. Perfectly chewy noodles. Tender pork slices. Easily one of the best bowls I’ve had in India—and **very well priced**.  
 
-{{< picture webp="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india.webp" jpg="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india.jpeg" alt="Pork-based Tonkotsu Ramen at Tokyo Suzuki Ramen, Bangalore, India" loading="lazy" decoding="async" >}}
+{{< picture webp="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india.webp" jpg="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india.jpeg" alt="Pork-based Tonkotsu Ramen at Tokyo Suzuki Ramen, Bangalore, India" >}}
 
 I loved it so much I brought my friends here… and now I’ve lost count of how many times I’ve been back. This place has become my **go-to spot for a comforting bowl of ramen**.  
 
@@ -15,7 +15,7 @@ They only make **30 bowls a day**, and it shows in the care that goes into each 
 
 If you’re craving Japanese soul food done right, this is where you’ll find it.
 
-{{< picture webp="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india-2.webp" jpg="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india-2.jpeg" alt="After my 10th visit, finally got to meet the chef" loading="lazy" decoding="async" >}}
+{{< picture webp="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india-2.webp" jpg="/images/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india-2.jpeg" alt="After my 10th visit, finally got to meet the chef" >}}
 
 ---
 
