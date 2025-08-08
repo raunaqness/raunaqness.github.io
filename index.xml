@@ -1,64 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>raunaqness.com</title>
-    <link>https://raunaqness.github.io/</link>
-    <description>Recent content on raunaqness.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="https://raunaqness.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>https://raunaqness.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
-      
-      <guid>https://raunaqness.github.io/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://raunaqness.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/about/</guid>
-      <description>Photo credit: Danish Prakash I&amp;rsquo;m Raunaq, I love travel, food, and technology (in that order) (and some other things).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>raunaqness.com</title><link>https://raunaqness.github.io/</link><description>Recent content on raunaqness.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="https://raunaqness.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://raunaqness.github.io/posts/my-first-post/</link><pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate><guid>https://raunaqness.github.io/posts/my-first-post/</guid><description>Introduction This is bold text, and this is emphasized text.
+Visit the Hugo website!</description></item><item><title>About</title><link>https://raunaqness.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/about/</guid><description>Photo credit: Danish Prakash I&amp;rsquo;m Raunaq, I love travel, food, and technology (in that order) (and some other things).
 I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
 Here&amp;rsquo;s a non-exhaustive list of stuff I&amp;rsquo;ve done over the years:
-[2025-Present] Exploring AI Agents, MCP servers, and building side projects to become better at using LLM based tools while contributing to open source.</description>
-    </item>
-    
-    <item>
-      <title>Chicken Keema Dosa at Malgudi Mylari Mane, Bangalore, India</title>
-      <link>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</guid>
-      <description>Some weekday afternoons call for a little indulgence—and I found mine at Malgudi Mylari Mane in Koramangala. A small, curated menu. Open, airy space. A peek into the spotless kitchen. Everything about it told me I was in good hands.
-The star of the show? Their Chicken Keema Dosa. Crisp on the outside, soft inside, and loaded with spiced, juicy chicken keema. It arrived at my table in minutes, yet tasted like something that had been perfected over years.</description>
-    </item>
-    
-    <item>
-      <title>Food</title>
-      <link>https://raunaqness.github.io/food/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/food/</guid>
-      <description> Welcome to my edible time capsule—dishes so memorable they&amp;rsquo;ve become landmarks in my personal history, from restaurants that have witnessed my evolution as a food lover.
-Tonkotsu Ramen @ Tokyo Suzuki Ramen | Bangalore, India Chicken Keema Dosa @ Malgudi Mylari Mane | Bangalore, India </description>
-    </item>
-    
-    <item>
-      <title>Tonkotsu Ramen at Tokyo Suzuki Ramen, Bangalore, India</title>
-      <link>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</guid>
-      <description>Ever since my 2023 trip to Japan, I’ve been on a mission to find that same ramen magic here in Bangalore. I found it at Tokyo Suzuki Ramen—a small, cozy spot hidden in HSR Layout.
+[2025-Present] Exploring AI Agents, MCP servers, and building side projects to become better at using LLM based tools while contributing to open source.</description></item><item><title>Chicken Keema Dosa at Malgudi Mylari Mane, Bangalore, India</title><link>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</guid><description>Some weekday afternoons call for a little indulgence—and I found mine at Malgudi Mylari Mane in Koramangala. A small, curated menu. Open, airy space. A peek into the spotless kitchen. Everything about it told me I was in good hands.
+The star of the show? Their Chicken Keema Dosa. Crisp on the outside, soft inside, and loaded with spiced, juicy chicken keema. It arrived at my table in minutes, yet tasted like something that had been perfected over years.</description></item><item><title>Food</title><link>https://raunaqness.github.io/food/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/food/</guid><description> Welcome to my edible time capsule—dishes so memorable they&amp;rsquo;ve become landmarks in my personal history, from restaurants that have witnessed my evolution as a food lover.
+Tonkotsu Ramen @ Tokyo Suzuki Ramen | Bangalore, India Chicken Keema Dosa @ Malgudi Mylari Mane | Bangalore, India Taiwanese Beef Noodle Soup @ Niu Rou Mian Guan | Seoul, South Korea</description></item><item><title>Taiwanese Beef Noodle Soup at Niu Rou Mian Guan, Seoul, South Korea</title><link>https://raunaqness.github.io/food/taiwanese-beef-noodle-soup-at-niu-rou-mian-guan-seoul-south-korea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/food/taiwanese-beef-noodle-soup-at-niu-rou-mian-guan-seoul-south-korea/</guid><description>During my first week in Seoul, after a blur of Myeongdong street food and too many instant-ramen nights, I opened the Michelin Guide app to find something new. Niu Rou Mian Guan popped up—nearby and budget-friendly—so I walked 10–15 minutes to check it out.
+It&amp;rsquo;s a tiny spot (maybe 10–20 seats) and was fully booked when I arrived. They asked me to come back the next morning. Slightly heartbroken, very hungry—but also excited.</description></item><item><title>Tonkotsu Ramen at Tokyo Suzuki Ramen, Bangalore, India</title><link>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</guid><description>Ever since my 2023 trip to Japan, I’ve been on a mission to find that same ramen magic here in Bangalore. I found it at Tokyo Suzuki Ramen—a small, cozy spot hidden in HSR Layout.
 The first time I tried their pork-based Tonkotsu Ramen, I was hooked. Rich, silky broth. Perfectly chewy noodles. Tender pork slices. Easily one of the best bowls I’ve had in India—and very well priced.
-I loved it so much I brought my friends here… and now I’ve lost count of how many times I’ve been back.</description>
-    </item>
-    
-  </channel>
-</rss>
+I loved it so much I brought my friends here… and now I’ve lost count of how many times I’ve been back.</description></item></channel></rss>
