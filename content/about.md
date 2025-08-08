@@ -11,7 +11,7 @@ I'm Raunaq, I love [travel](/travel), [food](/food), and [technology](/proof-of-
 
 I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
 
-Here's a non-exhaustive list of stuff I've done over the years, each condensed to a single sentence:
+Here's a non-exhaustive list of stuff I've done over the years:
 
 - **[2025-Present]** Exploring [AI Agents](/proof-of-work), MCP servers, and [building side projects](/proof-of-work) to become better at using LLM based tools while contributing to [open source](/proof-of-work).
 - **[2023-25]** Led end-to-end ML pipeline development and microservices architecture at [Revionics](https://revionics.com/) and building scalable retail pricing optimization systems.

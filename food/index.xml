@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Foods on raunaqness.com</title><link>https://raunaqness.github.io/food/</link><description>Recent content in Foods on raunaqness.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0530</lastBuildDate><atom:link href="https://raunaqness.github.io/food/index.xml" rel="self" type="application/rss+xml"/><item><title>Pad Thai - Thip Samai, Bangkok</title><link>https://raunaqness.github.io/food/pad-thai-thip-samai-bangkok/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0530</pubDate><guid>https://raunaqness.github.io/food/pad-thai-thip-samai-bangkok/</guid><description>Pad Thai at Thip Samai, Bangkok The dish that made me fall in love with Thai street food all over again.
-The Experience Your story about discovering this dish, what makes it special, and your memories of eating it here&amp;hellip;
-What Makes It Special Describe the unique aspects of this particular Pad Thai - the flavors, textures, cooking technique, etc.
-The Restaurant About Thip Samai - the atmosphere, the staff, the location, why you keep coming back&amp;hellip;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Foods on raunaqness.com</title>
+    <link>https://raunaqness.github.io/food/</link>
+    <description>Recent content in Foods on raunaqness.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://raunaqness.github.io/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chicken Keema Dosa at Malgudi Mylari Mane, Bangalore, India</title>
+      <link>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/</guid>
+      <description>Some weekday afternoons call for a little indulgence—and I found mine at Malgudi Mylari Mane in Koramangala. A small, curated menu. Open, airy space. A peek into the spotless kitchen. Everything about it told me I was in good hands.
+The star of the show? Their Chicken Keema Dosa. Crisp on the outside, soft inside, and loaded with spiced, juicy chicken keema. It arrived at my table in minutes, yet tasted like something that had been perfected over years.</description>
+    </item>
+    
+    <item>
+      <title>Tonkotsu Ramen at Tokyo Suzuki Ramen, Bangalore, India</title>
+      <link>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/</guid>
+      <description>Ever since my 2023 trip to Japan, I’ve been on a mission to find that same ramen magic here in Bangalore. I found it at Tokyo Suzuki Ramen—a small, cozy spot hidden in HSR Layout.
+The first time I tried their pork-based Tonkotsu Ramen, I was hooked. Rich, silky broth. Perfectly chewy noodles. Tender pork slices. Easily one of the best bowls I’ve had in India—and very well priced.
+I loved it so much I brought my friends here… and now I’ve lost count of how many times I’ve been back.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,7 +3,8 @@ title: "Food"
 draft: false
 ---
 
-These are my culinary love stories—dishes so extraordinary they've made me a romantic, returning to the same restaurants until the menu feels like poetry and the staff like family.
+> Welcome to my edible time capsule—dishes so memorable they've become landmarks in my personal history, from restaurants that have witnessed my evolution as a food lover.
 
-- [Pad Thai, Thip Samai, Bangkok](/food/pad-thai-thip-samai-bangkok)
+- [Tonkotsu Ramen @ Tokyo Suzuki Ramen | Bangalore, India](/food/tonkotsu-ramen-at-tokyo-suzuki-ramen-bangalore-india/)
+- [Chicken Keema Dosa @ Malgudi Mylari Mane | Bangalore, India](/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/)
 
