@@ -12,7 +12,7 @@ The manager, who spoke great English, helped us navigate the menu. I went for th
 
 {{< picture webp="/images/lanzhou-noodle-soup-uralsk-kazakhstan.webp" jpg="/images/lanzhou-noodle-soup-uralsk-kazakhstan.jpeg" alt="Beef noodle soup in Uralsk, Kazakhstan" >}}
 
-It came with a boiled egg, small sides, fresh bread, and hot tea—simple touches that made the experience feel even warmer. And the soup itself? Comfort in a bowl. Easily one of the **best noodle soups I've had anywhere**, right up there with my favorite Michelin-starred spot in South Korea.  
+It came with a boiled egg, small sides, fresh bread, and hot tea—simple touches that made the experience feel even warmer. And the soup itself? Comfort in a bowl. Easily one of the **best noodle soups I've had anywhere**, right up there with my favorite **Michelin Bib Gourmand** spot [Niroumianguan in Seoul](/food/chinese-beef-noodle-soup-at-niroumianguan-seoul-south-korea/)—both places serve that perfect combination of rich broth, tender meat, and springy noodles that make you want to return again and again.  
 
 If you ever find yourself in this part of Kazakhstan, make time for a bowl. Sometimes, the right meal finds you when you least expect it.  
 
