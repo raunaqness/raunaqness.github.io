@@ -4,7 +4,7 @@ draft: false
 tags: ["Seoul", "South Korea", "Beef Noodle Soup", "Taiwanese", "Michelin"]
 ---
 
-During my first week in Seoul, after a blur of Myeongdong street food and too many instant-ramen nights, I opened the **Michelin Guide** app to find something new. **Niu Rou Mian Guan** popped up—nearby and budget-friendly—so I walked 10–15 minutes to check it out.
+During my first week in Seoul, after a blur of Myeongdong street food and too many instant-ramen nights, I opened the **Michelin Guide** app to find something new. **[Niu Rou Mian Guan](https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/niroumianguan)** popped up—nearby and budget-friendly—so I walked 10–15 minutes to check it out.
 
 It's a tiny spot (maybe 10–20 seats) and was **fully booked** when I arrived. They asked me to come back the next morning. Slightly heartbroken, very hungry—but also excited. I showed up for breakfast, snagged a table, and that's when the magic started.
 
