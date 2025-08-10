@@ -24,8 +24,8 @@ params:
               url: "/food"
             - name: Resume
               url: "/files/resume.pdf?v=2"
-            # - name: Blog
-            #   url: "/blog"
+            - name: Blog
+              url: "/blog"
             # - name: Books
             #   url: "/books"
             # - name: Movies
