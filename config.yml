@@ -34,10 +34,14 @@ params:
             #   url: "/movies"
 
     socialIcons: # optional
+        - name: "x"
+          url: "https://x.com/raunaqness"
         - name: "instagram"
           url: "https://www.instagram.com/raunaqness/"
         - name: "linkedin"
           url: "https://www.linkedin.com/in/gurraunaqsingh/"
+        - name: "medium"
+          url: "https://medium.com/@raunaqness"
         - name: "github"
           url: "https://github.com/raunaqness"
         - name: "email"

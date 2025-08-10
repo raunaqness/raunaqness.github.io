@@ -29,4 +29,5 @@ Here's a non-exhaustive list of stuff I've done over the years:
 
 ---
 
-If there's a technical problem you're facing or you'd like to collaborate on building a product MVP, send me a DM on Twitter [@raunaqness](https://twitter.com/raunaqness) or reach out to me via [email](mailto:raunaqness@gmail.com).
+**Socials:** 🐦 [Twitter/X](https://x.com/raunaqness), 💼 [LinkedIn](https://www.linkedin.com/in/gurraunaqsingh/), 📸 [Instagram](http://instagram.com/raunaqness), 📝 [Medium](https://medium.com/@raunaqness), 💻 [GitHub](https://github.com/raunaqness), 📅 [Book a Call](https://calendly.com/raunaqness/)
+
