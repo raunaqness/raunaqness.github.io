@@ -18,14 +18,16 @@ params:
         # imageWidth: 200 # custom size - removed to allow natural aspect ratio
         # imageHeight: 200 # custom size - removed to allow natural aspect ratio
         buttons:
-            - name: About
-              url: "/about"
+            - name: Proof of Work
+              url: "/proof-of-work"
+            - name: Blog
+              url: "/blog"
             - name: Food
               url: "/food"
             - name: Resume
               url: "/files/resume.pdf?v=2"
-            - name: Blog
-              url: "/blog"
+            - name: About
+              url: "/about"
             # - name: Books
             #   url: "/books"
             # - name: Movies
