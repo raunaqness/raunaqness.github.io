@@ -4,7 +4,8 @@
 This document contains the key instructions and best practices for converting Hugo blog posts from raunaqness.com to Medium.com drafts.
 
 ## File Structure
-- Create new file: `content/medium-draft.md`
+- **Use single file:** `content/medium-draft.md` (overwrite existing content)
+- **Do NOT create separate files** for each post
 - Use title format: "Medium Draft - [Post Name]"
 - Set `draft: false` to make it visible in Hugo server
 
