@@ -19,9 +19,6 @@ If you ever find yourself wandering the streets of Makati late at night, skip th
 📍 **Kazuko Ramenba** *(Open 24 Hours)*  
 [Instagram](https://www.instagram.com/kazukoramenba/?hl=en) | [Google Maps](https://maps.app.goo.gl/dboSspfmom3n4vbC6)  
 
-<!-- Chef image placeholder - add when available -->
-<!-- {{< picture webp="/images/kazuko-ramen-bar-chef.webp" jpg="/images/kazuko-ramen-bar-chef.jpg" alt="Chatting with the chef at Kazuko Ramenba late at night" >}} -->
-
 ---
 
 *[Back to Food Hall of Fame](/food)*

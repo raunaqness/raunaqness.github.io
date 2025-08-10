@@ -12,4 +12,5 @@ draft: false
 | [Chinese Beef Noodle Soup](/food/chinese-beef-noodle-soup-at-niroumianguan-seoul-south-korea/) | Niroumianguan | Seoul, South Korea |
 | [Chicken Keema Dosa](/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/) | Malgudi Mylari Mane | Bangalore, India |
 | [Amazing Japanese Meal](/food/amazing-japanese-meal-at-kazuko-ramenba-makati-city-manila-philippines/) | Kazuko Ramenba | Makati City, Manila, Philippines |
+| [Comfort Breakfasts](/food/comfort-breakfasts-in-hong-kong-victory-a-cafe-shine-island-cafe/) | Victory A Café & Shine Island Café | Hong Kong |
 
