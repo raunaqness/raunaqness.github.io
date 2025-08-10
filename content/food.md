@@ -11,4 +11,5 @@ draft: false
 | [Lanzhou Noodle Soup](/food/lanzhou-noodle-soup-uralsk-kazakhstan/) | Lanzhou Noodle Shop | Uralsk, Kazakhstan |
 | [Chinese Beef Noodle Soup](/food/chinese-beef-noodle-soup-at-niroumianguan-seoul-south-korea/) | Niroumianguan | Seoul, South Korea |
 | [Chicken Keema Dosa](/food/chicken-keema-dosa-at-malgudi-mylari-mane-bangalore-india/) | Malgudi Mylari Mane | Bangalore, India |
+| [Amazing Japanese Meal](/food/amazing-japanese-meal-at-kazuko-ramenba-makati-city-manila-philippines/) | Kazuko Ramenba | Makati City, Manila, Philippines |
 
