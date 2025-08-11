@@ -11,3 +11,19 @@
   </div>
 </article>
 {{ end }}
+
+{{ define "baseof" }}
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="list" id="top">
+    {{ partial "header.html" . }}
+    <main class="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>
+{{ end }}
