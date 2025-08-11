@@ -1,0 +1,8 @@
+/* Override grey background for list pages to match blog styling */
+body.list {
+    background: var(--theme) !important;
+}
+
+.dark body.list {
+    background: var(--theme) !important;
+}
