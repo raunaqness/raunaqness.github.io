@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you be my Valentine?</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: hsl(350, 100%, 97%);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .content {
+      text-align: center;
+      z-index: 10;
+      padding: 0 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .heart-icon {
+      font-size: 5rem;
+      animation: float 3s ease-in-out infinite;
+      margin-bottom: 2rem;
+    }
+
+    .image-container {
+      margin-bottom: 2rem;
+    }
+
+    .image-container img {
+      width: 200px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .title {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(3rem, 10vw, 5rem);
+      background: linear-gradient(135deg, hsl(350, 80%, 65%), hsl(0, 75%, 55%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: hsl(350, 20%, 50%);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 28rem;
+    }
+
+    .btn {
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .btn-yes {
+      background: linear-gradient(135deg, hsl(350, 80%, 65%), hsl(0, 75%, 55%));
+      color: white;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-yes:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-no {
+      background: hsl(350, 30%, 95%);
+      color: hsl(350, 20%, 50%);
+      box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      transition: transform 0.15s ease-out;
+      cursor: not-allowed;
+    }
+
+    .hint {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.875rem;
+      color: hsl(350, 20%, 70%);
+      z-index: 10;
+    }
+
+    /* Floating hearts background */
+    .floating-hearts {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .floating-heart {
+      position: absolute;
+      animation: float var(--duration) ease-in-out infinite;
+      animation-delay: var(--delay);
+      opacity: var(--opacity);
+      font-size: var(--size);
+    }
+
+    /* Success screen */
+    .success-screen {
+      display: none;
+      min-height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .success-screen.active {
+      display: flex;
+    }
+
+    .container.hidden {
+      display: none;
+    }
+
+    .success-heart {
+      font-size: 8rem;
+      animation: pulse-heart 1s ease-in-out infinite;
+      margin-bottom: 2rem;
+    }
+
+    .success-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(4rem, 12vw, 6rem);
+      background: linear-gradient(135deg, hsl(350, 80%, 65%), hsl(0, 75%, 55%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+    }
+
+    .success-subtitle {
+      font-size: 1.5rem;
+      color: hsl(350, 50%, 30%);
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(5deg);
+      }
+    }
+
+    @keyframes pulse-heart {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="mainScreen">
+    <div class="floating-hearts" id="hearts"></div>
+
+    <div class="content">
+      <div class="image-container">
+        <!-- Replace src with your image URL -->
+        <img src="/cutie.jpeg" alt="Cute photo">
+      </div>
+      <div class="heart-icon">❤️</div>
+      <h1 class="title">Hey Cutie (Tanushree), will you be my valentine?</h1>
+      <p class="subtitle">Choose wisely... 💘</p>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-yes" onclick="sayYes()">Yes! 💖</button>
+      <button class="btn btn-no" id="noBtn">No</button>
+    </div>
+
+    <p class="hint">Hint: The "No" button is shy 😏</p>
+  </div>
+
+  <div class="success-screen" id="successScreen">
+    <div class="floating-hearts" id="successHearts"></div>
+    <div class="success-heart">❤️</div>
+    <h1 class="success-title">Yay! 💕</h1>
+    <p class="success-subtitle">I knew you'd say yes! 🥰</p>
+  </div>
+
+  <script>
+    // Create floating hearts
+    function createHearts(container, count) {
+      for (let i = 0; i < count; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'floating-heart';
+        heart.textContent = '❤️';
+        heart.style.setProperty('--delay', `${Math.random() * 5}s`);
+        heart.style.setProperty('--duration', `${3 + Math.random() * 4}s`);
+        heart.style.setProperty('--size', `${10 + Math.random() * 20}px`);
+        heart.style.setProperty('--opacity', `${0.1 + Math.random() * 0.3}`);
+        heart.style.left = `${Math.random() * 100}%`;
+        heart.style.top = `${Math.random() * 100}%`;
+        container.appendChild(heart);
+      }
+    }
+
+    createHearts(document.getElementById('hearts'), 15);
+    createHearts(document.getElementById('successHearts'), 30);
+
+    // No button logic
+    const noBtn = document.getElementById('noBtn');
+    let posX = 0;
+    let posY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      const rect = noBtn.getBoundingClientRect();
+      const buttonCenterX = rect.left + rect.width / 2;
+      const buttonCenterY = rect.top + rect.height / 2;
+
+      const distance = Math.sqrt(
+        Math.pow(e.clientX - buttonCenterX, 2) +
+        Math.pow(e.clientY - buttonCenterY, 2)
+      );
+
+      if (distance < 150) {
+        const angle = Math.atan2(buttonCenterY - e.clientY, buttonCenterX - e.clientX);
+        const moveDistance = 100 + Math.random() * 80;
+
+        let newX = posX + Math.cos(angle) * moveDistance;
+        let newY = posY + Math.sin(angle) * moveDistance;
+
+        // Keep within viewport
+        const padding = 20;
+        const maxX = window.innerWidth - rect.width - padding - (window.innerWidth / 2);
+        const minX = -(window.innerWidth / 2) + padding;
+        const maxY = window.innerHeight - rect.height - padding - (window.innerHeight / 2);
+        const minY = -(window.innerHeight / 2) + padding + 100;
+
+        newX = Math.max(minX, Math.min(maxX, newX));
+        newY = Math.max(minY, Math.min(maxY, newY));
+
+        posX = newX;
+        posY = newY;
+        noBtn.style.transform = `translate(${posX}px, ${posY}px)`;
+      }
+    });
+
+    // Yes button click
+    function sayYes() {
+      document.getElementById('mainScreen').classList.add('hidden');
+      document.getElementById('successScreen').classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
