@@ -26,8 +26,8 @@ params:
               url: "/food"
             - name: Resume
               url: "/resume"
-            - name: Photos
-              url: "/photos"
+            - name: Photography
+              url: "/photography"
             - name: About
               url: "/about"
             # - name: Books
