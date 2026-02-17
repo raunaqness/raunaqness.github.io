@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech on raunaqness.com</title>
+    <link>https://raunaqness.github.io/categories/tech/</link>
+    <description>Recent content in Tech on raunaqness.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://raunaqness.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Stateful AI Travel Agent</title>
+      <link>https://raunaqness.github.io/blog/ai-travel-agent/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/blog/ai-travel-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>You Should Buy Noise Cancelling Headphones</title>
+      <link>https://raunaqness.github.io/blog/noise-cancelling-headphones/</link>
+      <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/blog/noise-cancelling-headphones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to Access Spotify Without 3rd Party VPNs</title>
+      <link>https://raunaqness.github.io/blog/spotify-vpn/</link>
+      <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/blog/spotify-vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity3D is Amazing</title>
+      <link>https://raunaqness.github.io/blog/unity3d/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/blog/unity3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Story of How We Made $1,000 in 48 Hours</title>
+      <link>https://raunaqness.github.io/blog/made-1000-dollars/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://raunaqness.github.io/blog/made-1000-dollars/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -22,8 +22,7 @@ params:
               url: "/proof-of-work"
             - name: Blog
               url: "/blog"
-            - name: Food
-              url: "/food"
+
             - name: Resume
               url: "/resume"
             - name: Photography

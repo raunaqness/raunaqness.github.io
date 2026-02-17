@@ -5,9 +5,43 @@
       {{ .Title }}
     </h1>
   </header>
-  
+
   <div class="post-content">
     {{ .Content | safeHTML }}
+
+    {{ $blogPages := .Pages }}
+    {{ $categories := .Site.Taxonomies.categories }}
+    {{ $orderedCategories := slice "Tech" "Food" }}
+
+    {{ range $name := $orderedCategories }}
+    {{ $taxonomy := index $categories (lower $name) }}
+    {{ $posts := where $taxonomy.Pages "Section" "blog" }}
+    {{ if gt (len $posts) 0 }}
+    <h2>{{ $name | title }}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $posts }}
+        <tr>
+          <td><a href="{{ if .Params.externalUrl }}{{ .Params.externalUrl }}{{ else }}{{ .RelPermalink }}{{ end }}" {{
+              if .Params.externalUrl }}target="_blank" {{ end }}>{{ .Title }}</a></td>
+          {{ if .Date }}
+          <td>{{ .Date.Format "January 2, 2006" }}</td>
+          {{ else }}
+          <td></td>
+          {{ end }}
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    {{ end }}
+    {{ end }}
+
   </div>
 </article>
 {{ end }}
