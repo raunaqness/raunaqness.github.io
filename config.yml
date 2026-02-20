@@ -29,6 +29,8 @@ params:
               url: "/photography"
             - name: About
               url: "/about"
+            - name: Contact
+              url: "/contact"
             # - name: Books
             #   url: "/books"
             # - name: Movies
