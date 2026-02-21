@@ -31,6 +31,8 @@ params:
               url: "/about"
             - name: Contact
               url: "/contact"
+            - name: Reading
+              url: "/reading"
             # - name: Books
             #   url: "/books"
             # - name: Movies

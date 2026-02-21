@@ -7,7 +7,54 @@ body.list {
     background: var(--theme) !important;
 }
 
+/* Book Review Modal Styling */
+.book-review-modal {
+    background: var(--theme);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0;
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
+.book-review-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
 
+.book-review-modal .modal-content {
+    padding: 2rem;
+}
 
+.book-review-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.book-review-modal .close-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.book-review-modal .close-btn:hover {
+    opacity: 1;
+}
+
+.review-link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
 
