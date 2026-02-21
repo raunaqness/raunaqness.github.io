@@ -51,3 +51,8 @@ params:
           url: "https://github.com/raunaqness"
         - name: "email"
           url: "mailto:raunaqness@gmail.com"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

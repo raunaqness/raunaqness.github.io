@@ -3,16 +3,14 @@
     "title" }}</a>
 
 <dialog id="{{ $id }}" class="book-review-modal" onclick="if(event.target === this) this.close()">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 style="margin-top: 0; margin-bottom: 0.5rem;">{{ .Get "title" }}</h3>
-            <button class="close-btn" onclick="document.getElementById('{{ $id }}').close()"
-                aria-label="Close">×</button>
-        </div>
-        <div class="modal-author" style="font-size: 0.9em; opacity: 0.8; margin-bottom: 1.5rem;">
-            By {{ .Get "author" }}
-        </div>
-        <div class="modal-body" style="text-align: left;">
+    <div class="modal-header">
+        <button class="close-btn" onclick="document.getElementById('{{ $id }}').close()" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body" style="text-align: left;">
+        <div style="font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1em;">Title : {{ .Get "title" }}</div>
+        <div style="font-weight: bold; margin-bottom: 1.5rem; font-size: 1.1em;">Author: {{ .Get "author" }}</div>
+
+        <div style="line-height: 1.6;">
             {{ .Inner | markdownify }}
         </div>
     </div>

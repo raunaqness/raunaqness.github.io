@@ -14,9 +14,19 @@ body.list {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 0;
-    max-width: 600px;
-    width: 90%;
-    margin: auto;
+
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 75vw !important;
+    height: 75vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -25,24 +35,27 @@ body.list {
     backdrop-filter: blur(2px);
 }
 
-.book-review-modal .modal-content {
-    padding: 2rem;
-}
-
 .book-review-modal .modal-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem 1rem 0 1rem;
+    flex-shrink: 0;
+}
+
+.book-review-modal .modal-body {
+    padding: 0 2rem 2rem 2rem;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .book-review-modal .close-btn {
     background: none;
     border: none;
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     line-height: 1;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     opacity: 0.7;
     transition: opacity 0.2s;
 }
@@ -57,4 +70,3 @@ body.list {
     text-underline-offset: 4px;
     cursor: pointer;
 }
-
