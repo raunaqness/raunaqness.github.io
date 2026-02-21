@@ -27,12 +27,12 @@ params:
               url: "/resume"
             - name: Photography
               url: "/photography"
+            - name: Reading
+              url: "/reading"
             - name: About
               url: "/about"
             - name: Contact
               url: "/contact"
-            - name: Reading
-              url: "/reading"
             # - name: Books
             #   url: "/books"
             # - name: Movies
