@@ -1,5 +1,5 @@
 ---
-title: "Proof of Work"
+title: "Projects"
 draft: false
 ---
 

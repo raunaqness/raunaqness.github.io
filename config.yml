@@ -10,33 +10,11 @@ params:
     disableThemeToggle: false
     googleAnalytics: "G-WE06JCZYNP"  # Replace with your actual GA4 Measurement ID
     profileMode:
-        enabled: true
+        enabled: false
         title: "Raunaq Singh" # optional default will be site title
         subtitle: "Software Engineer | Consultant | Coffee Enthusiast"
         imageUrl: "/images/bhutan.jpg" # optional
         imageTitle: "dp" # optional
-        # imageWidth: 200 # custom size - removed to allow natural aspect ratio
-        # imageHeight: 200 # custom size - removed to allow natural aspect ratio
-        buttons:
-            - name: Proof of Work
-              url: "/proof-of-work"
-            - name: Blog
-              url: "/blog"
-
-            - name: Resume
-              url: "/resume"
-            - name: Photography
-              url: "/photography"
-            - name: Reading
-              url: "/reading"
-            - name: About
-              url: "/about"
-            - name: Contact
-              url: "/contact"
-            # - name: Books
-            #   url: "/books"
-            # - name: Movies
-            #   url: "/movies"
 
     socialIcons: # optional
         - name: "x"
@@ -51,6 +29,27 @@ params:
           url: "https://github.com/raunaqness"
         - name: "email"
           url: "mailto:raunaqness@gmail.com"
+
+menu:
+  main:
+    - name: Projects
+      url: /projects
+      weight: 10
+    - name: Blog
+      url: /blog
+      weight: 20
+    - name: Resume
+      url: /resume
+      weight: 30
+    - name: Photography
+      url: /photography
+      weight: 40
+    - name: Reading
+      url: /reading
+      weight: 50
+    - name: Contact
+      url: /contact
+      weight: 60
 
 markup:
   goldmark:

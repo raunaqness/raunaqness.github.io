@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Home"
 draft: false
 ---
 {{< picture webp="/images/bhutan.webp" jpg="/images/bhutan.jpg" alt="Bhutan landscape" >}}
@@ -7,13 +7,13 @@ draft: false
 {{< photo-credit "[Danish Prakash](https://danishpraka.sh/)" >}}
 
 ---
-I'm Raunaq, I love [travel](/travel), [food](/food), and [technology](/proof-of-work) (in that order) ([and some other things](/random)).
+I'm Raunaq, I love [travel](/travel), [food](/food), and [technology](/projects) (in that order) ([and some other things](/random)).
 
 I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
 
 Here's a non-exhaustive list of stuff I've done over the years:
 
-- **[2025-Present]** Exploring [AI Agents](/proof-of-work), MCP servers, and [building side projects](/proof-of-work) to become better at using LLM based tools while contributing to [open source](/proof-of-work).
+- **[2025-Present]** Exploring [AI Agents](/projects), MCP servers, and [building side projects](/projects) to become better at using LLM based tools while contributing to [open source](/projects).
 - **[2023-25]** Led end-to-end ML pipeline development and microservices architecture at [Revionics](https://revionics.com/) and building scalable retail pricing optimization systems.
 - **[2022-23]** Briefly worked as a Contractor with [OpenAI](https://openai.com/) on GPT 3
 - **[2022-23]** Developed ML models and data pipelines for talent matching systems at [Turing.com](https://www.turing.com/), collaborating with cross-functional teams to integrate AI solutions into production.
@@ -30,4 +30,3 @@ Here's a non-exhaustive list of stuff I've done over the years:
 ---
 
 **Socials:** 🐦 [Twitter/X](https://x.com/raunaqness), 💼 [LinkedIn](https://www.linkedin.com/in/gurraunaqsingh/), 📸 [Instagram](http://instagram.com/raunaqness), 📝 [Medium](https://medium.com/@raunaqness), 💻 [GitHub](https://github.com/raunaqness), 📅 [Book a Call](https://calendly.com/raunaqness/)
-
