@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>raunaqness.com</title>
+    <title>Home on raunaqness.com</title>
     <link>https://raunaqness.github.io/</link>
-    <description>Recent content on raunaqness.com</description>
+    <description>Recent content in Home on raunaqness.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://raunaqness.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -107,18 +107,6 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://raunaqness.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://raunaqness.github.io/about/</guid>
-      <description>Photo credit: Danish Prakash I&amp;rsquo;m Raunaq, I love travel, food, and technology (in that order) (and some other things).
-I currently live in Bengaluru and am taking time to explore (read: unemployed) the latest and greatest in AI technologies while contributing to open source projects.
-Here&amp;rsquo;s a non-exhaustive list of stuff I&amp;rsquo;ve done over the years:
-[2025-Present] Exploring AI Agents, MCP servers, and building side projects to become better at using LLM based tools while contributing to open source.</description>
-    </item>
-    
-    <item>
       <title>Amazing Japanese Meal at Kazuko Ramenba, Makati City, Manila, Philippines</title>
       <link>https://raunaqness.github.io/food/amazing-japanese-meal-at-kazuko-ramenba-makati-city-manila-philippines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -186,13 +174,14 @@ I&amp;rsquo;d seen Lanzhou noodle shops before—first in Almaty, then again in 
     </item>
     
     <item>
-      <title>Proof of Work</title>
-      <link>https://raunaqness.github.io/proof-of-work/</link>
+      <title>Projects</title>
+      <link>https://raunaqness.github.io/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://raunaqness.github.io/proof-of-work/</guid>
+      <guid>https://raunaqness.github.io/projects/</guid>
       <description>Machine Learning Jobs Platform - A platform connecting ML talent with companies worldwide. machinelearningjobs.dev
-AI Travel Agent - An AI-powered travel agent. ai-travel-agent.fly.dev</description>
+AI Travel Agent - An AI-powered travel agent. ai-travel-agent.fly.dev
+substack2md - Convert Substack posts to Markdown. Demo | GitHub</description>
     </item>
     
     <item>
