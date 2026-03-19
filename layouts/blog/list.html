@@ -18,18 +18,33 @@
     {{ $posts := where $taxonomy.Pages "Section" "blog" }}
     {{ if gt (len $posts) 0 }}
     <h2>{{ $name | title }}</h2>
-    <table>
+    <table style="width:100%; table-layout:fixed; display:table;">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Date</th>
+          <th style="width:65%">Title</th>
+          <th style="width:20%">Published On</th>
+          <th style="width:15%">Date</th>
         </tr>
       </thead>
       <tbody>
         {{ range $posts }}
+        {{ $url := .Params.externalUrl }}
+        {{ $substackUrl := .Params.substackUrl }}
+        {{ $mediumUrl := "" }}
+        {{ if $url }}
+          {{ if strings.Contains $url "medium.com" }}
+            {{ $mediumUrl = $url }}
+          {{ else if strings.Contains $url "substack.com" }}
+            {{ $substackUrl = $url }}
+          {{ end }}
+        {{ end }}
         <tr>
-          <td><a href="{{ if .Params.externalUrl }}{{ .Params.externalUrl }}{{ else }}{{ .RelPermalink }}{{ end }}" {{
-              if .Params.externalUrl }}target="_blank" {{ end }}>{{ .Title }}</a></td>
+          <td>{{ .Title }}</td>
+          <td>
+            {{ if $mediumUrl }}<a href="{{ $mediumUrl }}" target="_blank">Medium</a>{{ end }}
+            {{ if and $mediumUrl $substackUrl }} · {{ end }}
+            {{ if $substackUrl }}<a href="{{ $substackUrl }}" target="_blank">Substack</a>{{ end }}
+          </td>
           {{ if .Date }}
           <td>{{ .Date.Format "January 2, 2006" }}</td>
           {{ else }}
