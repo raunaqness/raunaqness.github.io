@@ -3,6 +3,8 @@ title: "Projects"
 draft: false
 ---
 
+**FluxBox** - An ultra-lightweight, privacy-focused macOS menu bar utility built with Rust and Tauri that provides instant access to system stats, market data, and workspace items. [GitHub](https://github.com/raunaqness/fluxbox)
+
 **Machine Learning Jobs Platform** - A platform connecting ML talent with companies worldwide. [machinelearningjobs.dev](https://machinelearningjobs.dev/)
 
 **AI Travel Agent** - An AI-powered travel agent. [ai-travel-agent.fly.dev](https://ai-travel-agent.fly.dev/)
