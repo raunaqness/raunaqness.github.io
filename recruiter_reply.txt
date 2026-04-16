@@ -1,0 +1,21 @@
+Subject: Re: [original subject]
+
+Hi [Name],
+
+Thanks so much — excited about the opportunity!
+
+Here's everything you need:
+
+- Resume: [attached / link]
+- Portfolio / Website: https://raunaqness.github.io
+- GitHub: https://github.com/raunaqness
+
+A few projects worth highlighting:
+- FluxBox — macOS menu bar utility built with Rust + Tauri (https://github.com/raunaqness/fluxbox)
+- substack2md — converts Substack posts to Markdown (https://substack2md.vercel.app/)
+- Machine Learning Jobs Platform — https://machinelearningjobs.dev/
+
+Happy to answer any questions or jump on a call. Looking forward to hearing the team's thoughts!
+
+Best,
+Raunaq
