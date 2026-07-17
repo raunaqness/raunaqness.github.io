@@ -3,7 +3,9 @@ title: "Projects"
 draft: false
 ---
 
-**FluxBox** - An ultra-lightweight, privacy-focused macOS menu bar utility built with Rust and Tauri that provides instant access to system stats, market data, and workspace items. [GitHub](https://github.com/raunaqness/fluxbox)
+**FluxBox** - An ultra-lightweight, privacy-focused macOS menu bar utility built with Rust and Tauri that provides instant access to system stats, market data, and workspace items. [fluxbox.raunaqness.com](https://fluxbox.raunaqness.com/) | [GitHub](https://github.com/raunaqness/fluxbox)
+
+**TVBox** - Your personal, self-hosted Netflix. Search for a movie or TV show, manage downloads from one dashboard, move files to Google Drive, and watch them through Infuse. [tvbox.raunaqness.com](https://tvbox.raunaqness.com/)
 
 **MakanMap** - Singapore's living hawker map, built at the GMI Cloud x Z.ai Singapore Hackathon 2025. A two-sided platform where stall owners snap a menu photo to go live in minutes, and consumers get a real-time map of what's open with multilingual AI-generated marketing copy. [GitHub](https://github.com/raunaqness/gmi-hackathon)
 
