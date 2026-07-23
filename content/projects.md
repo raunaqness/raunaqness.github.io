@@ -3,6 +3,8 @@ title: "Projects"
 draft: false
 ---
 
+**ChatDB** - Your personal data analyst. Upload CSVs, ask questions in plain English, and get answers from a private per-user database — no SQL required. [GitHub](https://github.com/raunaqness/chat-with-csv)
+
 **FluxBox** - An ultra-lightweight, privacy-focused macOS menu bar utility built with Rust and Tauri that provides instant access to system stats, market data, and workspace items. [fluxbox.raunaqness.com](https://fluxbox.raunaqness.com/) | [GitHub](https://github.com/raunaqness/fluxbox)
 
 **TVBox** - Your personal, self-hosted Netflix. Search for a movie or TV show, manage downloads from one dashboard, move files to Google Drive, and watch them through Infuse. [tvbox.raunaqness.com](https://tvbox.raunaqness.com/)
