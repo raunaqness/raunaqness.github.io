@@ -3,17 +3,13 @@ title: "Projects"
 draft: false
 ---
 
-**ChatDB** - Your personal data analyst. Upload CSVs, ask questions in plain English, and get answers from a private per-user database — no SQL required. [chatdb.raunaqness.com](https://chatdb.raunaqness.com) | [GitHub](https://github.com/raunaqness/chat-with-csv)
+**Scratchpad** - Agentic AI software for brainstorming ideas and creating content online. [Try it](https://scratchpad.raunaqness.com) | [GitHub](https://github.com/raunaqness/scratchpad)
 
-**FluxBox** - An ultra-lightweight, privacy-focused macOS menu bar utility built with Rust and Tauri that provides instant access to system stats, market data, and workspace items. [fluxbox.raunaqness.com](https://fluxbox.raunaqness.com/) | [GitHub](https://github.com/raunaqness/fluxbox)
+**FluxBox** - An ultra-lightweight, privacy-focused macOS productivity command center for system stats, markets, timers, and ambient sounds, summoned with Alt + Space. [fluxbox.raunaqness.com](https://fluxbox.raunaqness.com/) | [GitHub](https://github.com/raunaqness/fluxbox)
 
 **TVBox** - Your personal, self-hosted Netflix. Search for a movie or TV show, manage downloads from one dashboard, move files to Google Drive, and watch them through Infuse. [tvbox.raunaqness.com](https://tvbox.raunaqness.com/)
 
-**MakanMap** - Singapore's living hawker map, built at the GMI Cloud x Z.ai Singapore Hackathon 2025. A two-sided platform where stall owners snap a menu photo to go live in minutes, and consumers get a real-time map of what's open with multilingual AI-generated marketing copy. [GitHub](https://github.com/raunaqness/gmi-hackathon)
-
-**Machine Learning Jobs Platform** - A platform connecting ML talent with companies worldwide. [machinelearningjobs.dev](https://machinelearningjobs.dev/)
-
-**AI Travel Agent** - An AI-powered travel agent. [ai-travel-agent.fly.dev](https://ai-travel-agent.fly.dev/)
+**MakanMap** - Singapore's living hawker map, built at the GMI Cloud x Z.ai Singapore Hackathon 2025. Stall owners go live via menu photo; consumers get a real-time map with multilingual AI-generated marketing copy. [GitHub](https://github.com/raunaqness/gmi-hackathon)
 
 **substack2md** - Convert Substack posts to Markdown. [Demo](https://substack2md.vercel.app/) | [GitHub](https://github.com/raunaqness/substack2md)
 
