@@ -1,3 +1,12 @@
 public/
 resources/
 .hugo_build.lock
+
+# photos sync secrets
+.env
+service-account.json
+.venv-sync-test/
+
+# photos sync scratch
+scripts/__pycache__/
+scripts/_test_output/

@@ -9,6 +9,7 @@ params:
     defaultTheme: light
     disableThemeToggle: false
     googleAnalytics: "G-WE06JCZYNP"  # Replace with your actual GA4 Measurement ID
+    photosBaseURL: "https://photos.raunaqness.com"
     profileMode:
         enabled: false
         title: "Raunaq Singh" # optional default will be site title

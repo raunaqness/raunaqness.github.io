@@ -1,0 +1,236 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  <div class="post-content">
+    <div id="photo-status" class="photo-status">loading albums&hellip;</div>
+    <div id="photo-albums" class="photo-grid"></div>
+    <div id="photo-album-detail" class="photo-detail-stack" style="display:none;"></div>
+  </div>
+</article>
+
+<style>
+  .photo-status {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 900px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .photo-card {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+  }
+
+  .photo-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    background: var(--entry);
+    border-radius: 0;
+    margin: 0;
+    filter: grayscale(85%) contrast(95%);
+    transition: filter 0.35s ease;
+  }
+
+  .photo-card:hover img,
+  .photo-card:focus-visible img {
+    filter: grayscale(0%) contrast(100%);
+  }
+
+  .photo-detail-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .photo-detail-stack .photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: var(--entry);
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .photo-card-meta {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+  }
+
+  .photo-card-title {
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .photo-back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  .photo-album-title {
+    grid-column: 1 / -1;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .photo-album-meta {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin: -0.75rem 0 0.5rem 0;
+  }
+</style>
+
+<script>
+(function () {
+  const BASE = "{{ .Site.Params.photosBaseURL }}";
+  const statusEl = document.getElementById("photo-status");
+  const albumsEl = document.getElementById("photo-albums");
+  const detailEl = document.getElementById("photo-album-detail");
+
+  let manifest = [];
+
+  function renderAlbums() {
+    detailEl.style.display = "none";
+    detailEl.innerHTML = "";
+    albumsEl.style.display = "grid";
+    albumsEl.innerHTML = "";
+
+    manifest.forEach(album => {
+      const card = document.createElement("button");
+      card.className = "photo-card";
+      card.addEventListener("click", () => {
+        location.hash = album.slug;
+      });
+
+      const img = document.createElement("img");
+      img.src = BASE + "/" + album.slug + "/" + album.cover;
+      img.alt = album.title;
+      img.loading = "lazy";
+
+      const subtextParts = [album.count + " photos"];
+      if (album.date) subtextParts.push(album.date);
+      if (album.camera) subtextParts.push(album.camera);
+      const subtext = subtextParts.join(" &bull; ");
+
+      const meta = document.createElement("div");
+      meta.className = "photo-card-meta";
+      meta.innerHTML = '<span class="photo-card-title">' + album.title + "</span><br>" + subtext;
+
+      card.appendChild(img);
+      card.appendChild(meta);
+      albumsEl.appendChild(card);
+    });
+  }
+
+  function renderAlbumDetail(slug) {
+    const album = manifest.find(a => a.slug === slug);
+    if (!album) {
+      renderAlbums();
+      return;
+    }
+
+    albumsEl.style.display = "none";
+    detailEl.style.display = "flex";
+    detailEl.innerHTML = "";
+
+    const back = document.createElement("div");
+    back.className = "photo-back-link photo-album-title";
+    back.textContent = "← All albums";
+    back.addEventListener("click", () => {
+      location.hash = "";
+    });
+    detailEl.appendChild(back);
+
+    const title = document.createElement("h2");
+    title.className = "photo-album-title";
+    title.textContent = album.title;
+    detailEl.appendChild(title);
+
+    const detailMetaParts = [];
+    if (album.date) detailMetaParts.push(album.date);
+    if (album.camera) detailMetaParts.push(album.camera);
+    if (album.lens) detailMetaParts.push(album.lens);
+    if (detailMetaParts.length) {
+      const detailMeta = document.createElement("div");
+      detailMeta.className = "photo-album-meta";
+      detailMeta.textContent = detailMetaParts.join(" · ");
+      detailEl.appendChild(detailMeta);
+    }
+
+    album.photos.forEach(file => {
+      const fullUrl = BASE + "/" + album.slug + "/" + file;
+
+      const wrap = document.createElement("div");
+      wrap.className = "photo-item";
+
+      const link = document.createElement("a");
+      link.href = fullUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+
+      const img = document.createElement("img");
+      img.src = fullUrl;
+      img.alt = album.title;
+      img.loading = "lazy";
+
+      link.appendChild(img);
+      wrap.appendChild(link);
+      detailEl.appendChild(wrap);
+    });
+  }
+
+  function route() {
+    const slug = location.hash.replace(/^#/, "");
+    if (slug) {
+      renderAlbumDetail(slug);
+    } else {
+      renderAlbums();
+    }
+  }
+
+  fetch(BASE + "/manifest.json")
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(data => {
+      manifest = data;
+      statusEl.style.display = "none";
+      route();
+    })
+    .catch(err => {
+      statusEl.textContent = "Could not load photos: " + err.message;
+    });
+
+  window.addEventListener("hashchange", route);
+})();
+</script>
+{{ end }}
