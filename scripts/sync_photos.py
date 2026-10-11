@@ -40,6 +40,9 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 from PIL import Image, ImageOps
+from pillow_heif import register_heif_opener
+
+register_heif_opener()  # lets Image.open() handle iPhone .HEIC files
 
 load_dotenv()
 

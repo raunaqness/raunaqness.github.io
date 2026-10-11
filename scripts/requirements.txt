@@ -2,5 +2,6 @@ boto3==1.43.111
 google-api-python-client==2.201.0
 google-auth==2.61.0
 Pillow==12.3.0
+pillow-heif==1.8.1
 python-dotenv==1.2.4
 requests==2.34.2
