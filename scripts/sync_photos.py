@@ -216,9 +216,33 @@ def purge_cache(urls: list[str]):
             print(f"  purge batch {i // 30 + 1}: ok ({len(batch)} url(s))")
 
 
-def sync_album(folder, purge_urls: list[str]):
-    clean_title, tag_date = parse_date_tag(folder["name"])
-    slug = slugify(clean_title)
+def resolve_slugs(folders):
+    """Returns [(folder, clean_title, tag_date, slug), ...]. Two folders can
+    produce the same base slug (e.g. two trips both named "Hanoi, Vietnam"
+    tagged with different years) -- when that happens, disambiguate by
+    appending the tag's year (or the Drive folder id, if untagged) so
+    every album still gets a distinct, stable slug instead of silently
+    colliding and overwriting each other in D1."""
+    parsed = []
+    for folder in folders:
+        clean_title, tag_date = parse_date_tag(folder["name"])
+        base_slug = slugify(clean_title)
+        parsed.append([folder, clean_title, tag_date, base_slug])
+
+    from collections import Counter
+    base_counts = Counter(p[3] for p in parsed)
+
+    for p in parsed:
+        folder, clean_title, tag_date, base_slug = p
+        if base_counts[base_slug] > 1:
+            suffix = tag_date[:4] if tag_date else folder["id"][:6]
+            p[3] = f"{base_slug}-{suffix}"
+            print(f"  slug collision on '{base_slug}' -> disambiguated to '{p[3]}' ({folder['name']})")
+
+    return [tuple(p) for p in parsed]
+
+
+def sync_album(folder, clean_title, tag_date, slug, purge_urls: list[str]):
     print(f"\n=== Album: {folder['name']} -> slug '{slug}' ===")
 
     files = list_children(folder["id"], order_by="createdTime")
@@ -334,10 +358,12 @@ def main():
     )
     print(f"Found {len(albums_folders)} album folder(s) in Drive.")
 
+    resolved = resolve_slugs(albums_folders)
+
     purge_urls = []
     current_slugs = set()
-    for folder in albums_folders:
-        slug = sync_album(folder, purge_urls)
+    for folder, clean_title, tag_date, slug in resolved:
+        sync_album(folder, clean_title, tag_date, slug, purge_urls)
         current_slugs.add(slug)
 
     # remove whole albums that no longer have a Drive folder
