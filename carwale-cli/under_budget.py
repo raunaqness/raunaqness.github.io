@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build variants-under-15-lakh-bangalore.md: every variant (manual + automatic) of the
+"""Build variants-under-15-lakh-bangalore.md: every automatic variant of the
 saved cars whose Bangalore on-road price is below the limit, in one table grouped by car."""
 import json, sys
 from pathlib import Path
@@ -32,19 +32,20 @@ def main():
         cp = {r["id"]: r for r in json.loads((base / c / "prices-bangalore.json").read_text())["variants"]}
         name = d["overview"]["name"]
         picked = []
-        for v in d["variants"]:
+        autos = [v for v in d["variants"] if v["specs"].get("Transmission Type", "").startswith("Automatic")]
+        for v in autos:
             r = cp.get(int(v["id"]), {})
             if r.get("on_road") and r["on_road"] < LIMIT:
                 picked.append((r["on_road"], v, r))
         picked.sort(key=lambda t: (t[0], t[1]["variant"]))
-        per_car[name] = (len(picked), len(d["variants"]))
+        per_car[name] = (len(picked), len(autos))
         for on, v, r in picked:
             s = v["specs"]
             rows.append((name, v["variant"], s.get("Fuel Type", ""), s.get("Transmission Type", ""), s.get("Displacement", ""),
                          s.get("Max Engine Power", ""), v["features"].get("Max Engine Torque", s.get("Max Engine Torque", "")),
                          on, r.get("ex_showroom"), features(v)))
-    L = [f"# Variants under Rs. {LIMIT / 100000:g} lakh on-road in Bangalore", "",
-         "Data source file. Every variant (manual and automatic) of Hyundai Creta, Kia Sonet, Honda Elevate, Skoda Kylaq, Honda Amaze, Kia Syros and Hyundai Venue "
+    L = [f"# Automatic variants under Rs. {LIMIT / 100000:g} lakh on-road in Bangalore", "",
+         "Data source file. Every automatic variant (CVT, DCT, torque converter; manual and clutchless-manual iMT excluded) of Hyundai Creta, Kia Sonet, Honda Elevate, Skoda Kylaq, Honda Amaze, Kia Syros and Hyundai Venue "
          f"whose CarWale on-road price in Bangalore is below Rs. {LIMIT:,}. Grouped by car, cheapest first within each car.", "",
          "- **Prices** are in rupees, from carwale.com, quoted at Bangalore city level (CarWale has no HSR Layout option). On-road = ex-showroom + RTO/road tax, insurance, TCS, FASTag and other charges. It excludes accessories, warranty extensions and discounts.",
          "- **Features** are the ~33 fields CarWale lists per variant (only those present). Cosmetic differences between trims may not appear.",
@@ -55,7 +56,7 @@ def main():
         pw = str(r[5]).replace(" bhp", "").strip()
         tq = str(r[6]).replace(" Nm", "").strip()
         L.append(f"| {esc(r[0])} | {esc(r[1])} | {r[2]} | {r[3]} | {str(r[4]).replace(' cc','')} | {pw} | {tq} | {r[7]:,} | {r[8]:,} | {esc(r[9])} |")
-    L += ["", "## Counts", "", "| Car | Variants under limit | Total variants |", "|---|---|---|"]
+    L += ["", "## Counts", "", "| Car | Automatic variants under limit | Total automatic variants |", "|---|---|---|"]
     L += [f"| {k} | {a} | {b} |" for k, (a, b) in per_car.items()]
     L.append(f"| **Total** | **{sum(a for a, _ in per_car.values())}** | **{sum(b for _, b in per_car.values())}** |")
     Path("variants-under-15-lakh-bangalore.md").write_text("\n".join(L) + "\n", encoding="utf-8")
