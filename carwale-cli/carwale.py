@@ -240,6 +240,62 @@ def cmd_expert(a):
              "description": e["description"], "url": BASE + e["url"]} for e in mp["expertReviews"]]
 
 
+def fetch_binary(url, dest):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = r.read()
+    except Exception as e:  # network policy, 404, etc.
+        return f"{type(e).__name__}: {e}"
+    if not data.startswith(b"%PDF"):
+        return "response was not a PDF"
+    dest.write_bytes(data)
+    return None
+
+
+def cmd_download(a):
+    """Save everything about a model into <out>/<brand>-<model>/."""
+    b, mp = model_page(a.brand, a.model)
+    d = mp["modelDetails"]
+    folder = Path(a.out) / f"{b}-{slug(a.model)}"
+    folder.mkdir(parents=True, exist_ok=True)
+    overview = cmd_model(a)
+    variants = [variant_row(v) for v in mp["versions"]]
+    reviews = cmd_reviews(argparse.Namespace(brand=a.brand, model=a.model, pages=a.review_pages))
+    expert = cmd_expert(a)
+    brochure = d.get("brochurePath")
+    if brochure and not brochure.startswith("http"):
+        brochure = "https://stc.aeplcdn.com/" + brochure.lstrip("/")
+    err = fetch_binary(brochure, folder / "brochure.pdf") if brochure else "no brochure listed"
+    data = {"overview": overview, "variants": variants, "ratings": reviews["summary"],
+            "user_reviews": reviews["reviews"], "expert_reviews": expert, "brochure_url": brochure,
+            "brochure_downloaded": err is None, "brochure_error": err}
+    (folder / "details.json").write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    L = [f"# {overview['name']}", "", f"Source: {overview['url']}", ""]
+    for k in ("price_range", "starting_price", "on_road_starting", "launched", "rating", "review_count"):
+        L.append(f"- **{k.replace('_', ' ').title()}:** {overview[k]}")
+    L += [f"- **Brochure:** {brochure}" + ("" if err is None else f" (not downloaded: {err})"), ""]
+    L += ["## Key specs", ""] + [f"- {k}: {v}" for k, v in overview["key_specs"].items()]
+    L += ["", "## Mileage", ""] + [f"- " + ", ".join(f"{k}={v}" for k, v in m.items()) for m in overview["mileage"]]
+    L += ["", f"## Variants ({len(variants)})", "", "| Variant | Price | Fuel | Gearbox | Power |", "|---|---|---|---|---|"]
+    for v in variants:
+        sp = v["specs"]
+        L.append(f"| {v['variant']} | {v['price']} | {sp.get('Fuel Type', '')} | {sp.get('Transmission Type', '')} | {sp.get('Max Engine Power', '')} |")
+    for v in variants:
+        L += ["", f"### {v['variant']} - {v['price']}", "", "Specs:"] + [f"- {k}: {x}" for k, x in v["specs"].items()]
+        L += ["", "Features:"] + [f"- {k}: {x}" for k, x in v["features"].items()]
+    r = reviews["summary"]
+    L += ["", "## User ratings", "", f"{r['overall_rating']}/5 from {r['total_ratings']} ratings ({r['review_count']} written reviews)", ""]
+    L += [f"- {k}: {x}" for k, x in r["parameters"].items()]
+    L += ["", f"## User reviews (latest {len(reviews['reviews'])})", ""]
+    for x in reviews["reviews"]:
+        L += [f"**[{x['rating']}/5] {x['title']}** - {x['author']} ({x['variant']})", "", x["text"], ""]
+    L += ["## Expert reviews", ""] + [f"- [{e['title']}]({e['url']}) - {e['author']}, {e['date']}" for e in expert]
+    (folder / "details.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+    return {"folder": str(folder), "variants": len(variants), "user_reviews": len(reviews["reviews"]),
+            "brochure_downloaded": err is None, "brochure_error": err}
+
+
 # ----------------------------------------------------------------- output
 def table(rows, cols):
     if not rows:
@@ -298,6 +354,8 @@ def render(cmd, data, a):
         for r in data["reviews"]:
             print(f"[{r['rating']}/5] {r['title']} - {r['author']} ({r['variant']}, {r['upvotes']} upvotes)")
             print("   " + r["text"].replace("\n", "\n   ") + "\n")
+    elif cmd == "download":
+        kv(data)
     elif cmd == "expert-reviews":
         for e in data:
             print(f"{e['title']} ({e['author']}, {e['date']})\n  {e['description']}\n  {e['url']}\n")
@@ -318,6 +376,9 @@ def main():
     s.add_argument("variant"); s.add_argument("--specs", action="store_true", help="include full feature list"); s.set_defaults(fn=cmd_variant)
     s = sub.add_parser("reviews", help="user ratings and reviews"); s.add_argument("brand"); s.add_argument("model")
     s.add_argument("--pages", type=int, default=1, help="pages of 10 reviews"); s.set_defaults(fn=cmd_reviews)
+    s = sub.add_parser("download", help="save all details (+ brochure) for a model into a folder")
+    s.add_argument("brand"); s.add_argument("model"); s.add_argument("--out", default="downloads")
+    s.add_argument("--review-pages", type=int, default=3, help="pages of user reviews to save"); s.set_defaults(fn=cmd_download)
     a = p.parse_args()
     try:
         data = a.fn(a)
