@@ -240,6 +240,33 @@ def cmd_expert(a):
              "description": e["description"], "url": BASE + e["url"]} for e in mp["expertReviews"]]
 
 
+def city_prices(brand, model, city="bangalore"):
+    """Per-variant ex-showroom and on-road prices for a city (CarWale has no per-area prices here)."""
+    b = resolve_brand(brand)
+    st = get_state(f"/{b}-cars/{slug(model)}/price-in-{slug(city)}/")
+    pg = st.get("priceInCityPage")
+    if not pg:
+        raise CarWaleError(f"No price page for {brand} {model} in {city}.")
+    loc = pg.get("urlLocation", {})
+    rows = []
+    for v in pg["versions"]:
+        po = v.get("priceOverview") or {}
+        rows.append({"id": v["versionId"], "variant": v["versionName"],
+                     "on_road": po.get("price") or None, "ex_showroom": po.get("exShowRoomPrice") or None,
+                     "label": po.get("priceLabel")})
+    breakup = []
+    for d in (pg.get("detailedPriceList") or [])[:1]:
+        for br in d.get("PriceBreakupList", [])[:1]:
+            breakup = [{"name": c["name"], "value": c["value"]} for c in br["charges"]]
+    return {"city": loc.get("cityName"), "area_available": loc.get("isAreaAvailable"),
+            "url": f"{BASE}/{b}-cars/{slug(model)}/price-in-{slug(city)}/",
+            "default_variant_breakup": breakup, "variants": rows}
+
+
+def cmd_city_prices(a):
+    return city_prices(a.brand, a.model, a.city)
+
+
 def fetch_binary(url, dest):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
@@ -267,6 +294,9 @@ def cmd_download(a):
     if brochure and not brochure.startswith("http"):
         brochure = "https://stc.aeplcdn.com/" + brochure.lstrip("/")
     err = fetch_binary(brochure, folder / "brochure.pdf") if brochure else "no brochure listed"
+    cp = city_prices(a.brand, a.model, a.city) if a.city else None
+    if cp:
+        (folder / f"prices-{slug(a.city)}.json").write_text(json.dumps(cp, indent=2, ensure_ascii=False), encoding="utf-8")
     data = {"overview": overview, "variants": variants, "ratings": reviews["summary"],
             "user_reviews": reviews["reviews"], "expert_reviews": expert, "brochure_url": brochure,
             "brochure_downloaded": err is None, "brochure_error": err}
@@ -354,6 +384,11 @@ def render(cmd, data, a):
         for r in data["reviews"]:
             print(f"[{r['rating']}/5] {r['title']} - {r['author']} ({r['variant']}, {r['upvotes']} upvotes)")
             print("   " + r["text"].replace("\n", "\n   ") + "\n")
+    elif cmd == "city-prices":
+        rows = [{"variant": v["variant"], "on_road": f"Rs. {v['on_road']:,}" if v["on_road"] else "n/a",
+                 "ex": f"Rs. {v['ex_showroom']:,}" if v["ex_showroom"] else "n/a"} for v in data["variants"]]
+        print(f"{data['city']} (city-level; area prices available: {data['area_available']})")
+        table(rows, [("Variant", "variant"), ("On-road", "on_road"), ("Ex-showroom", "ex")])
     elif cmd == "download":
         kv(data)
     elif cmd == "expert-reviews":
@@ -376,8 +411,10 @@ def main():
     s.add_argument("variant"); s.add_argument("--specs", action="store_true", help="include full feature list"); s.set_defaults(fn=cmd_variant)
     s = sub.add_parser("reviews", help="user ratings and reviews"); s.add_argument("brand"); s.add_argument("model")
     s.add_argument("--pages", type=int, default=1, help="pages of 10 reviews"); s.set_defaults(fn=cmd_reviews)
+    s = sub.add_parser("city-prices", help="per-variant on-road price in a city"); s.add_argument("brand"); s.add_argument("model")
+    s.add_argument("--city", default="bangalore"); s.set_defaults(fn=cmd_city_prices)
     s = sub.add_parser("download", help="save all details (+ brochure) for a model into a folder")
-    s.add_argument("brand"); s.add_argument("model"); s.add_argument("--out", default="downloads")
+    s.add_argument("brand"); s.add_argument("model"); s.add_argument("--out", default="downloads"); s.add_argument("--city", default=None, help="also save on-road prices for this city")
     s.add_argument("--review-pages", type=int, default=3, help="pages of user reviews to save"); s.set_defaults(fn=cmd_download)
     a = p.parse_args()
     try:

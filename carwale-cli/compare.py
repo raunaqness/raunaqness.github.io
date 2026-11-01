@@ -15,9 +15,12 @@ POWER = ["Fuel Type", "Transmission Type", "Engine Type", "Displacement", "Max E
 SKIP_FEATURES = {"Alloy Wheels", "Max Engine Torque", "Seating Capacity", "Drivetrain", "Turbocharger / Supercharger"}  # shown via powertrain
 
 
+def lakh(n):
+    return f"Rs. {n / 100000:.2f} Lakh" if n else "n/a"
+
+
 def price(v):
-    m = re.search(r"\d[\d.]*", v["price"])
-    return float(m.group()) if m else 1e9
+    return v["on_road"] or v["ex_showroom"] or 1e12
 
 
 def feat(v):
@@ -71,7 +74,7 @@ def cell(lines):
 def main():
     base = Path("downloads")
     out = ["# Automatic variants comparison", "",
-           "Source: carwale.com (average ex-showroom price, as fetched; brochures are saved alongside in `downloads/`). "
+           "Source: carwale.com. Prices are CarWale's **Bangalore on-road prices** (ex-showroom + RTO/road tax, insurance, TCS and other charges). CarWale quotes them at city level only: it has no HSR Layout area option for Bangalore. Brochures are saved in `downloads/`. "
            "Only automatic gearboxes (CVT, DCT, torque converter) are included. Kia Sonet's clutchless-manual (iMT) variants are excluded.", "",
            "**How to read each table:** the first row is the cheapest automatic and lists everything it has. "
            "Every later row lists *only what changes* compared with the variant named in **vs**: "
@@ -79,6 +82,10 @@ def main():
            "So reading down a column shows what you get for each upgrade.", ""]
     for slug_ in ORDER:
         d = json.loads((base / slug_ / "details.json").read_text())
+        cp = {r["id"]: r for r in json.loads((base / slug_ / "prices-bangalore.json").read_text())["variants"]}
+        for v in d["variants"]:
+            r = cp.get(int(v["id"]), {})
+            v["on_road"], v["ex_showroom"] = r.get("on_road"), r.get("ex_showroom")
         vs = sorted([v for v in d["variants"] if v["specs"].get("Transmission Type", "").startswith("Automatic")],
                     key=lambda v: (price(v), v["variant"]))
         o = d["overview"]
@@ -86,9 +93,9 @@ def main():
         if not vs:
             out += ["No automatic variants listed.", ""]
             continue
-        out += [f"{len(vs)} automatic variants, {vs[0]['price']} to {vs[-1]['price']}. "
-                f"Brochure: [`downloads/{slug_}/brochure.pdf`](downloads/{slug_}/brochure.pdf). Manual price range for the whole model: {o['price_range']}.", "",
-                "| Variant | Price (ex-showroom) | vs | What you get |", "|---|---|---|---|"]
+        out += [f"{len(vs)} automatic variants, {lakh(vs[0]['on_road'])} to {lakh(vs[-1]['on_road'])} on-road in Bangalore. "
+                f"Brochure: [`downloads/{slug_}/brochure.pdf`](downloads/{slug_}/brochure.pdf). ", "",
+                "| Variant | On-road price, Bangalore | Ex-showroom (Bangalore) | vs | What you get |", "|---|---|---|---|---|"]
         last = {}  # powertrain -> latest variant
         for i, v in enumerate(vs):
             if i == 0:
@@ -97,7 +104,7 @@ def main():
                 ref = last.get(pt(v)) or vs[0]
                 lines, refname = diff(ref, v), ref["variant"]
             last[pt(v)] = v
-            out.append(f"| {esc(v['variant'])} | {v['price']} | {esc(refname)} | {cell(lines)} |")
+            out.append(f"| {esc(v['variant'])} | {lakh(v['on_road'])} | {lakh(v['ex_showroom'])} | {esc(refname)} | {cell(lines)} |")
         out.append("")
     Path("automatic-variants-comparison.md").write_text("\n".join(out), encoding="utf-8")
     print("written", len(out), "lines")

@@ -1,0 +1,310 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/hyundai-cars/venue/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 799900
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 111986
+    },
+    {
+      "name": "RTO",
+      "value": 124305
+    },
+    {
+      "name": "Registration Charges",
+      "value": 3663
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 1000
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 10639
+    },
+    {
+      "name": "Insurance",
+      "value": 44267
+    },
+    {
+      "name": "Zero Dep Insurance",
+      "value": 8519
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 1500
+    },
+    {
+      "name": "FASTag",
+      "value": 600
+    },
+    {
+      "name": "4 Years Extended Warranty",
+      "value": 12861
+    },
+    {
+      "name": "Shield of Trust",
+      "value": 14399
+    },
+    {
+      "name": "3M Protection",
+      "value": 25333
+    },
+    {
+      "name": "Accessories Package",
+      "value": 35000
+    }
+  ],
+  "variants": [
+    {
+      "id": 22371,
+      "variant": "HX 2 Petrol 1.2L 5 Speed Manual",
+      "on_road": 973735,
+      "ex_showroom": 799900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22469,
+      "variant": "HX 2 Petrol 1.0L Turbo 6 Speed Manual",
+      "on_road": 1068538,
+      "ex_showroom": 893600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22373,
+      "variant": "HX 4 Petrol 1.2L 5 Speed Manual",
+      "on_road": 1082528,
+      "ex_showroom": 899900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22375,
+      "variant": "HX 5 Petrol 1.2L 5 Speed Manual",
+      "on_road": 1148076,
+      "ex_showroom": 955600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23868,
+      "variant": "HX 5 Petrol 1.2L 5 Speed Manual Knight Edition",
+      "on_road": 1165610,
+      "ex_showroom": 970500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22507,
+      "variant": "HX 5 Petrol 1.0L Turbo 6 Speed Manual",
+      "on_road": 1185456,
+      "ex_showroom": 993100,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22457,
+      "variant": "HX 2 Diesel 1.5L Turbo 6 Speed Manual",
+      "on_road": 1193971,
+      "ex_showroom": 994600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23037,
+      "variant": "HX 5 Plus Petrol 1.2L 5 Speed Manual",
+      "on_road": 1200208,
+      "ex_showroom": 999900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23676,
+      "variant": "HX 5 Plus Petrol 1.2L 5 Speed Manual Dual Tone",
+      "on_road": 1262106,
+      "ex_showroom": 1017900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22487,
+      "variant": "HX 5 Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1348508,
+      "ex_showroom": 1094600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23866,
+      "variant": "HX 6T Petrol 1.2L 5 Speed Manual",
+      "on_road": 1348621,
+      "ex_showroom": 1089000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22465,
+      "variant": "HX 5 Diesel 1.5L Turbo 6 Speed Manual",
+      "on_road": 1361519,
+      "ex_showroom": 1099600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23874,
+      "variant": "HX 6T Petrol 1.2L 5 Speed Manual Knight Edition",
+      "on_road": 1366751,
+      "ex_showroom": 1103900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23930,
+      "variant": "HX 6T Petrol 1.2L 5 Speed Manual Dual Tone",
+      "on_road": 1370523,
+      "ex_showroom": 1107000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23870,
+      "variant": "HX 5 Diesel 1.5L Turbo 6 Speed Manual Knight Edition",
+      "on_road": 1384517,
+      "ex_showroom": 1118500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23926,
+      "variant": "HX 6T Petrol 1.2L 5 Speed Manual Dual Tone Knight Edition",
+      "on_road": 1388654,
+      "ex_showroom": 1121900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22453,
+      "variant": "HX 8 Petrol 1.0L Turbo 6 Speed Manual",
+      "on_road": 1469771,
+      "ex_showroom": 1194400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22459,
+      "variant": "HX 5 Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1476507,
+      "ex_showroom": 1194100,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22479,
+      "variant": "HX 8 Petrol 1.0L Turbo 6 Speed Manual Dual Tone",
+      "on_road": 1491642,
+      "ex_showroom": 1212400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22451,
+      "variant": "HX 6 Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1501483,
+      "ex_showroom": 1220500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22477,
+      "variant": "HX 6 Petrol 1.0L Turbo Automatic (DCT) Dual Tone",
+      "on_road": 1523354,
+      "ex_showroom": 1238500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22463,
+      "variant": "HX 7 Diesel 1.5L Turbo 6 Speed Manual",
+      "on_road": 1583220,
+      "ex_showroom": 1281800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22471,
+      "variant": "HX 8 Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1601604,
+      "ex_showroom": 1302900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22467,
+      "variant": "HX 7 Diesel 1.5L Turbo 6 Speed Manual Dual Tone",
+      "on_road": 1605123,
+      "ex_showroom": 1299800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 22485,
+      "variant": "HX 8 Petrol 1.0L Turbo Automatic (DCT) Dual Tone",
+      "on_road": 1623475,
+      "ex_showroom": 1320900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23546,
+      "variant": "HX 8 Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1698573,
+      "ex_showroom": 1376600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23872,
+      "variant": "HX 8 Diesel 1.5L Turbo Automatic (TC) Knight Edition",
+      "on_road": 1716704,
+      "ex_showroom": 1391500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23678,
+      "variant": "HX 8 Diesel 1.5L Turbo Automatic (TC) Dual Tone",
+      "on_road": 1720476,
+      "ex_showroom": 1394600,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23934,
+      "variant": "HX 8 Diesel 1.5L Turbo Automatic (TC) Dual Tone Knight Edition",
+      "on_road": 1738606,
+      "ex_showroom": 1409500,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23876,
+      "variant": "HX 10 Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1801966,
+      "ex_showroom": 1467800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23878,
+      "variant": "HX 10 Petrol 1.0L Turbo Automatic (DCT) Knight Edition",
+      "on_road": 1819099,
+      "ex_showroom": 1481900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23924,
+      "variant": "HX 10 Petrol 1.0L Turbo Automatic (DCT) Dual Tone",
+      "on_road": 1823837,
+      "ex_showroom": 1485800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23932,
+      "variant": "HX 10 Petrol 1.0L Turbo Automatic (DCT) Dual Tone Knight Edition",
+      "on_road": 1840969,
+      "ex_showroom": 1499900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23880,
+      "variant": "HX 10 Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1931454,
+      "ex_showroom": 1564700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23928,
+      "variant": "HX 10 Diesel 1.5L Turbo Automatic (TC) Dual Tone",
+      "on_road": 1953356,
+      "ex_showroom": 1582700,
+      "label": "On-Road Price"
+    }
+  ]
+}

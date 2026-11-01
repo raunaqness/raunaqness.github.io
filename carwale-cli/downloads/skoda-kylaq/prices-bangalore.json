@@ -1,0 +1,152 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/skoda-cars/kylaq/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 759000
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 106260
+    },
+    {
+      "name": "RTO",
+      "value": 121614
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 3662
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 10095
+    },
+    {
+      "name": "Insurance",
+      "value": 30484
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 1500
+    },
+    {
+      "name": "FASTag",
+      "value": 600
+    },
+    {
+      "name": "5 Years Extended Warranty",
+      "value": 10699
+    },
+    {
+      "name": "Drive Assure",
+      "value": 7207
+    },
+    {
+      "name": "Drive Assure Elite",
+      "value": 12175
+    },
+    {
+      "name": "Skoda Maintenance Package",
+      "value": 27499
+    },
+    {
+      "name": "Accessories Package",
+      "value": 10000
+    }
+  ],
+  "variants": [
+    {
+      "id": 18807,
+      "variant": "Classic Petrol Turbo Manual",
+      "on_road": 915360,
+      "ex_showroom": 759000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23231,
+      "variant": "Classic Plus Petrol Turbo Manual",
+      "on_road": 995427,
+      "ex_showroom": 829000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23233,
+      "variant": "Classic Plus Petrol Turbo Automatic (TC)",
+      "on_road": 1113771,
+      "ex_showroom": 929000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18811,
+      "variant": "Signature Petrol Turbo Manual",
+      "on_road": 1137384,
+      "ex_showroom": 949000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18827,
+      "variant": "Signature Petrol Turbo Automatic (TC)",
+      "on_road": 1301149,
+      "ex_showroom": 1049000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18823,
+      "variant": "Signature Plus Petrol Turbo Manual",
+      "on_road": 1338064,
+      "ex_showroom": 1079000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23245,
+      "variant": "Sportline Petrol Turbo Manual",
+      "on_road": 1407290,
+      "ex_showroom": 1135000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18829,
+      "variant": "Signature Plus Petrol Turbo Automatic (TC)",
+      "on_road": 1460738,
+      "ex_showroom": 1179000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18825,
+      "variant": "Prestige Petrol Turbo Manual",
+      "on_road": 1467875,
+      "ex_showroom": 1185000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23243,
+      "variant": "Prestige Plus Petrol Turbo Manual",
+      "on_road": 1497316,
+      "ex_showroom": 1209000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23247,
+      "variant": "Sportline Petrol Turbo Automatic (TC)",
+      "on_road": 1529560,
+      "ex_showroom": 1235000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18983,
+      "variant": "Prestige Petrol Turbo Automatic (TC)",
+      "on_road": 1590549,
+      "ex_showroom": 1285000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23241,
+      "variant": "Prestige Plus Petrol Turbo Automatic (TC)",
+      "on_road": 1619990,
+      "ex_showroom": 1309000,
+      "label": "On-Road Price"
+    }
+  ]
+}

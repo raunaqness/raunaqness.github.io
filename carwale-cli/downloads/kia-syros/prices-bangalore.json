@@ -1,0 +1,168 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/kia-cars/syros/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 841900
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 117866
+    },
+    {
+      "name": "RTO",
+      "value": 130831
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 1000
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 11197
+    },
+    {
+      "name": "Insurance",
+      "value": 33080
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 1500
+    },
+    {
+      "name": "FASTag",
+      "value": 500
+    },
+    {
+      "name": "Extended Warranty",
+      "value": 22885
+    },
+    {
+      "name": "Accessories Package",
+      "value": 22839
+    }
+  ],
+  "variants": [
+    {
+      "id": 23884,
+      "variant": "HTE Petrol 1.0L Turbo Manual",
+      "on_road": 1007311,
+      "ex_showroom": 841900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23886,
+      "variant": "HTE (O) Petrol 1.0L Turbo Manual",
+      "on_road": 1101874,
+      "ex_showroom": 921900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23890,
+      "variant": "HTK EX Petrol 1.0L Turbo Manual",
+      "on_road": 1172797,
+      "ex_showroom": 981900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23888,
+      "variant": "HTE (O) Diesel 1.5L Turbo Manual",
+      "on_road": 1233613,
+      "ex_showroom": 999900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23894,
+      "variant": "HTK Plus Petrol 1.0L Turbo Manual",
+      "on_road": 1294668,
+      "ex_showroom": 1075900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23892,
+      "variant": "HTK EX Diesel 1.5L Turbo Manual",
+      "on_road": 1319610,
+      "ex_showroom": 1061900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23896,
+      "variant": "HTK Plus Diesel 1.5L Turbo Manual",
+      "on_road": 1434916,
+      "ex_showroom": 1155900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23898,
+      "variant": "HTK Plus Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1477536,
+      "ex_showroom": 1195900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23904,
+      "variant": "HTK Plus (O) Petrol 1.0L Turbo Manual",
+      "on_road": 1484889,
+      "ex_showroom": 1201900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23902,
+      "variant": "HTK Plus Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1582117,
+      "ex_showroom": 1275900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23908,
+      "variant": "HTK Plus (O) Diesel 1.5L Turbo Manual",
+      "on_road": 1589478,
+      "ex_showroom": 1281900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23906,
+      "variant": "HTK Plus (O) Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1631930,
+      "ex_showroom": 1321900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23900,
+      "variant": "HTX Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1729957,
+      "ex_showroom": 1401900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23910,
+      "variant": "HTK Plus (O) Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1736678,
+      "ex_showroom": 1401900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23916,
+      "variant": "HTX Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1834812,
+      "ex_showroom": 1481900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23912,
+      "variant": "HTX (O) Petrol 1.0L Turbo Automatic (DCT)",
+      "on_road": 1850093,
+      "ex_showroom": 1499900,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 23914,
+      "variant": "HTX (O) Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1957479,
+      "ex_showroom": 1581900,
+      "label": "On-Road Price"
+    }
+  ]
+}

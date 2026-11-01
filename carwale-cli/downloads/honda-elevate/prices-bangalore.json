@@ -1,0 +1,122 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/honda-cars/elevate/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 1180000
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 200600
+    },
+    {
+      "name": "RTO",
+      "value": 208600
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 1000
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 19706
+    },
+    {
+      "name": "Insurance",
+      "value": 57450
+    },
+    {
+      "name": "Tax Collected at Source (TCS)",
+      "value": 11800
+    },
+    {
+      "name": "FASTag",
+      "value": 500
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 1500
+    }
+  ],
+  "variants": [
+    {
+      "id": 25938,
+      "variant": "SV  Petrol Manual",
+      "on_road": 1459350,
+      "ex_showroom": 1180000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25940,
+      "variant": "V Petrol Manual",
+      "on_road": 1518973,
+      "ex_showroom": 1229000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24244,
+      "variant": "V Petrol Automatic (CVT)",
+      "on_road": 1701494,
+      "ex_showroom": 1379000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25944,
+      "variant": "VX Petrol Manual",
+      "on_road": 1718529,
+      "ex_showroom": 1393000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24240,
+      "variant": "ZX Petrol Manual",
+      "on_road": 1900182,
+      "ex_showroom": 1539000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25946,
+      "variant": "VX Petrol Automatic (CVT)",
+      "on_road": 1900182,
+      "ex_showroom": 1539000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24242,
+      "variant": "ZX Plus Petrol Manual",
+      "on_road": 2071751,
+      "ex_showroom": 1680000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25952,
+      "variant": "ZX Petrol Automatic (CVT)",
+      "on_road": 2082702,
+      "ex_showroom": 1689000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25942,
+      "variant": "ZX Plus Black Petrol Manual",
+      "on_road": 2083919,
+      "ex_showroom": 1690000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25950,
+      "variant": "ZX Plus Petrol Automatic (CVT)",
+      "on_road": 2254272,
+      "ex_showroom": 1830000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25948,
+      "variant": "ZX Plus Black Petrol Automatic (CVT)",
+      "on_road": 2266440,
+      "ex_showroom": 1840000,
+      "label": "On-Road Price"
+    }
+  ]
+}

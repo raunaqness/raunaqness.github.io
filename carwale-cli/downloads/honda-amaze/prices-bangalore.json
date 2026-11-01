@@ -1,0 +1,99 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/honda-cars/amaze/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 765400
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 107156
+    },
+    {
+      "name": "RTO",
+      "value": 124305
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 1000
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 10180
+    },
+    {
+      "name": "Insurance",
+      "value": 48418
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 800
+    },
+    {
+      "name": "FASTag",
+      "value": 600
+    },
+    {
+      "name": "RSA",
+      "value": 1912
+    },
+    {
+      "name": "4 Years Extended Warranty",
+      "value": 5546
+    },
+    {
+      "name": "Paint Protection",
+      "value": 28320
+    },
+    {
+      "name": "Accessories Package",
+      "value": 6865
+    }
+  ],
+  "variants": [
+    {
+      "id": 18995,
+      "variant": "V Petrol Manual",
+      "on_road": 939723,
+      "ex_showroom": 765400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18997,
+      "variant": "VX Petrol Manual",
+      "on_road": 1059339,
+      "ex_showroom": 865400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 19001,
+      "variant": "V Petrol Automatic",
+      "on_road": 1065673,
+      "ex_showroom": 870400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18999,
+      "variant": "ZX Petrol Manual",
+      "on_road": 1147819,
+      "ex_showroom": 939400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 19003,
+      "variant": "VX Petrol Automatic",
+      "on_road": 1148974,
+      "ex_showroom": 940400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 19005,
+      "variant": "ZX Petrol Automatic",
+      "on_road": 1225957,
+      "ex_showroom": 999900,
+      "label": "On-Road Price"
+    }
+  ]
+}

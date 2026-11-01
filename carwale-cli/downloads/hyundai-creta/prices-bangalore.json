@@ -1,0 +1,311 @@
+{
+  "city": "Bangalore",
+  "area_available": false,
+  "url": "https://www.carwale.com/hyundai-cars/creta/price-in-bangalore/",
+  "default_variant_breakup": [
+    {
+      "name": "Ex-Showroom Price",
+      "value": 1090700
+    },
+    {
+      "name": "RTO-Corporate",
+      "value": 185419
+    },
+    {
+      "name": "RTO",
+      "value": 193419
+    },
+    {
+      "name": "Road Safety Tax/Cess",
+      "value": 1000
+    },
+    {
+      "name": "RTO-Bharat",
+      "value": 18215
+    },
+    {
+      "name": "Insurance",
+      "value": 54164
+    },
+    {
+      "name": "Tax Collected at Source (TCS)",
+      "value": 10907
+    },
+    {
+      "name": "FASTag",
+      "value": 500
+    },
+    {
+      "name": "Hypothecation Charges",
+      "value": 1500
+    }
+  ],
+  "variants": [
+    {
+      "id": 9371,
+      "variant": "E Petrol 1.5L Manual",
+      "on_road": 1350690,
+      "ex_showroom": 1090700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16213,
+      "variant": "EX Petrol 1.5L Manual",
+      "on_road": 1491839,
+      "ex_showroom": 1206700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 9377,
+      "variant": "E Diesel 1.5L Turbo Manual",
+      "on_road": 1557911,
+      "ex_showroom": 1261000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20041,
+      "variant": "EX (O) Petrol 1.5L Manual",
+      "on_road": 1622645,
+      "ex_showroom": 1314200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16029,
+      "variant": "EX Diesel 1.5L Turbo Manual",
+      "on_road": 1694193,
+      "ex_showroom": 1373000,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16005,
+      "variant": "S (O) Petrol 1.5L Manual",
+      "on_road": 1752234,
+      "ex_showroom": 1420700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18185,
+      "variant": "S (O) Knight Petrol 1.5L Manual Knight Edition",
+      "on_road": 1774745,
+      "ex_showroom": 1439200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20045,
+      "variant": "EX (O) Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 1787522,
+      "ex_showroom": 1449700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20043,
+      "variant": "EX (O) Diesel 1.5L Turbo Manual",
+      "on_road": 1824634,
+      "ex_showroom": 1480200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16007,
+      "variant": "SX Petrol 1.5L Manual",
+      "on_road": 1858081,
+      "ex_showroom": 1504400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16009,
+      "variant": "SX Petrol 1.5L Manual Dual Tone",
+      "on_road": 1876333,
+      "ex_showroom": 1519400,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 9373,
+      "variant": "S (O) Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 1932671,
+      "ex_showroom": 1565700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 16033,
+      "variant": "S (O) Diesel 1.5L Turbo Manual",
+      "on_road": 1964308,
+      "ex_showroom": 1591700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 18193,
+      "variant": "S (O) Knight Diesel 1.5L Turbo Manual Knight Edition",
+      "on_road": 1986818,
+      "ex_showroom": 1610200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20047,
+      "variant": "EX (O) Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 1992902,
+      "ex_showroom": 1615200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20049,
+      "variant": "SX Premium Petrol 1.5L Manual",
+      "on_road": 2016022,
+      "ex_showroom": 1634200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 20928,
+      "variant": "SX Premium Petrol 1.5L Manual Dual Tone",
+      "on_road": 2034274,
+      "ex_showroom": 1649200,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21813,
+      "variant": "King Edition Petrol 1.5L Manual",
+      "on_road": 2129914,
+      "ex_showroom": 1727800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 9379,
+      "variant": "S (O) Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 2140744,
+      "ex_showroom": 1736700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21903,
+      "variant": "King Edition Petrol 1.5L Manual Dual Tone",
+      "on_road": 2148166,
+      "ex_showroom": 1742800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24254,
+      "variant": "SX Premium Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 2191850,
+      "ex_showroom": 1778700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24256,
+      "variant": "SX Premium Petrol 1.5L CVT Speed Automatic (CVT) Dual Tone",
+      "on_road": 2210102,
+      "ex_showroom": 1793700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24252,
+      "variant": "SX Premium Diesel 1.5L Turbo Manual",
+      "on_road": 2217402,
+      "ex_showroom": 1799700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 24258,
+      "variant": "SX Premium Diesel 1.5L Turbo Manual Dual Tone",
+      "on_road": 2235654,
+      "ex_showroom": 1814700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21815,
+      "variant": "King Edition Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 2301484,
+      "ex_showroom": 1868800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21823,
+      "variant": "King Knight Edition Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 2319127,
+      "ex_showroom": 1883300,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25554,
+      "variant": "King Knight Edition Petrol 1.5L CVT Speed Automatic (CVT) Dual Tone",
+      "on_road": 2319736,
+      "ex_showroom": 1883800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21817,
+      "variant": "King Edition Diesel 1.5L Turbo Manual",
+      "on_road": 2330687,
+      "ex_showroom": 1892800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21907,
+      "variant": "King Edition Diesel 1.5L Turbo Manual Dual Tone",
+      "on_road": 2348939,
+      "ex_showroom": 1907800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25530,
+      "variant": "King Lounge Edition Petrol 1.5L CVT Speed Automatic (CVT)",
+      "on_road": 2365852,
+      "ex_showroom": 1921700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25532,
+      "variant": "King Lounge Edition Petrol 1.5L Automatic (CVT) Dual Tone",
+      "on_road": 2384104,
+      "ex_showroom": 1936700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21819,
+      "variant": "King Edition Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 2437765,
+      "ex_showroom": 1980800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21821,
+      "variant": "King Edition Petrol 1.5L Automatic (DCT)",
+      "on_road": 2450542,
+      "ex_showroom": 1991300,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21911,
+      "variant": "King Edition Diesel 1.5L Turbo Automatic (TC) Dual Tone",
+      "on_road": 2456017,
+      "ex_showroom": 1995800,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21913,
+      "variant": "King Edition Petrol 1.5L Turbo Automatic (DCT) Dual Tone",
+      "on_road": 2488857,
+      "ex_showroom": 2006300,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 21825,
+      "variant": "King Knight Edition Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 2498671,
+      "ex_showroom": 2014300,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25534,
+      "variant": "King Lounge Edition Diesel 1.5L Turbo Automatic (TC)",
+      "on_road": 2518791,
+      "ex_showroom": 2030700,
+      "label": "On-Road Price"
+    },
+    {
+      "id": 25536,
+      "variant": "King Lounge Edition Diesel 1.5L Turbo Automatic (TC) Dual Tone",
+      "on_road": 2537193,
+      "ex_showroom": 2045700,
+      "label": "On-Road Price"
+    }
+  ]
+}
