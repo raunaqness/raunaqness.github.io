@@ -15,13 +15,17 @@ def esc(t):
     return str(t).replace("|", "\\|")
 
 
-def features(v):
+def feature_list(v):
     out = []
     for k, x in v["features"].items():
         if k in SKIP or x in HIDE:
             continue
         out.append(k if (x == "Yes" or k in FLAG_ONLY) else f"{k}: {x}")
-    return "; ".join(out)
+    return out
+
+
+def lakh(n):
+    return f"{n / 100000:.2f}"
 
 
 def main():
@@ -41,24 +45,33 @@ def main():
         per_car[name] = (len(picked), len(autos))
         for on, v, r in picked:
             s = v["specs"]
-            rows.append((name, v["variant"], s.get("Fuel Type", ""), s.get("Transmission Type", ""), s.get("Displacement", ""),
-                         s.get("Max Engine Power", ""), v["features"].get("Max Engine Torque", s.get("Max Engine Torque", "")),
-                         on, r.get("ex_showroom"), features(v)))
-    L = [f"# Automatic variants under Rs. {LIMIT / 100000:g} lakh on-road in Bangalore", "",
-         "Data source file. Every automatic variant (CVT, DCT, torque converter; manual and clutchless-manual iMT excluded) of Hyundai Creta, Kia Sonet, Honda Elevate, Skoda Kylaq, Honda Amaze, Kia Syros and Hyundai Venue "
-         f"whose CarWale on-road price in Bangalore is below Rs. {LIMIT:,}. Grouped by car, cheapest first within each car.", "",
-         "- **Prices** are in rupees, from carwale.com, quoted at Bangalore city level (CarWale has no HSR Layout option). On-road = ex-showroom + RTO/road tax, insurance, TCS, FASTag and other charges. It excludes accessories, warranty extensions and discounts.",
-         "- **Features** are the ~33 fields CarWale lists per variant (only those present). Cosmetic differences between trims may not appear.",
-         "- Regenerate with `python3 under_budget.py [limit_in_rupees]` after refreshing `downloads/` (`carwale.py download <brand> <model> --city bangalore`).", "",
-         "| Car | Variant | Fuel | Gearbox | Engine (cc) | Power (bhp) | Torque (Nm) | On-road, Bangalore (Rs.) | Ex-showroom, Bangalore (Rs.) | Features |",
-         "|---|---|---|---|---|---|---|---|---|---|"]
+            rows.append({"car": name, "variant": v["variant"], "fuel": s.get("Fuel Type", ""), "gearbox": s.get("Transmission Type", ""),
+                         "cc": str(s.get("Displacement", "")).replace(" cc", ""), "power": str(s.get("Max Engine Power", "")).replace(" bhp", "").strip(),
+                         "torque": str(v["features"].get("Max Engine Torque", s.get("Max Engine Torque", ""))).replace(" Nm", "").strip(),
+                         "on_road": on, "ex": r.get("ex_showroom"), "features": feature_list(v)})
+    lim = f"Rs. {LIMIT / 100000:g} lakh"
+    L = [f"# Automatic variants under {lim}, Bangalore on-road", "",
+         f"{len(rows)} automatic variants (CVT, DCT, torque converter) of Creta, Sonet, Elevate, Kylaq, Amaze, Syros and Venue "
+         f"with a CarWale on-road price in Bangalore below {lim}. Grouped by car, cheapest first. Manual and iMT variants are excluded.", "",
+         "Prices are in lakh (Rs.) from carwale.com at Bangalore city level (no HSR Layout option exists). On-road = ex-showroom + RTO/road tax, "
+         "insurance, TCS, FASTag and other charges; no accessories, warranty extensions or discounts. "
+         "Exact rupee amounts are in each variant's heading. Regenerate with `python3 under_budget.py [limit_in_rupees]`.", "",
+         "## Counts", "", "| Car | Under limit | Automatics total |", "|---|---|---|"]
+    L += [f"| {k} | {a_} | {b_} |" for k, (a_, b_) in per_car.items()]
+    L += [f"| **Total** | **{sum(a_ for a_, _ in per_car.values())}** | **{sum(b_ for _, b_ in per_car.values())}** |", ""]
+    cars = []
     for r in rows:
-        pw = str(r[5]).replace(" bhp", "").strip()
-        tq = str(r[6]).replace(" Nm", "").strip()
-        L.append(f"| {esc(r[0])} | {esc(r[1])} | {r[2]} | {r[3]} | {str(r[4]).replace(' cc','')} | {pw} | {tq} | {r[7]:,} | {r[8]:,} | {esc(r[9])} |")
-    L += ["", "## Counts", "", "| Car | Automatic variants under limit | Total automatic variants |", "|---|---|---|"]
-    L += [f"| {k} | {a} | {b} |" for k, (a, b) in per_car.items()]
-    L.append(f"| **Total** | **{sum(a for a, _ in per_car.values())}** | **{sum(b for _, b in per_car.values())}** |")
+        if r["car"] not in cars:
+            cars.append(r["car"])
+    for car in cars:
+        cr = [r for r in rows if r["car"] == car]
+        L += [f"## {car}", "", "| Variant | On-road (L) | Ex-showroom (L) | Engine | Power |", "|---|---|---|---|---|"]
+        for r in cr:
+            L.append(f"| {esc(r['variant'])} | {lakh(r['on_road'])} | {lakh(r['ex'])} | {r['fuel']} {r['cc']} cc, {r['gearbox'].replace('Automatic (', '').rstrip(')')} | {r['power']} bhp / {r['torque']} Nm |")
+        L += ["", "### Features by variant", ""]
+        for r in cr:
+            L += [f"#### {esc(r['variant'])}", "", f"Rs. {r['on_road']:,} on-road / Rs. {r['ex']:,} ex-showroom", ""]
+            L += [f"- {f}" for f in r["features"]] + [""]
     Path("variants-under-15-lakh-bangalore.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     print(per_car)
 
