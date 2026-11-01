@@ -8,7 +8,7 @@ Source: https://www.carwale.com/hyundai-cars/venue/
 - **Launched:** 11/04/2025
 - **Rating:** 4.65
 - **Review Count:** 76
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/8/3223/kiagfrm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/8/3223/kiagfrm.pdf
 
 ## Key specs
 

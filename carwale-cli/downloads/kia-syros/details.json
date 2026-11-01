@@ -950,6 +950,6 @@
   ],
   "expert_reviews": [],
   "brochure_url": "https://stc.aeplcdn.com/f/brochure/70/3722/kh3dqtm.pdf",
-  "brochure_downloaded": false,
-  "brochure_error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+  "brochure_downloaded": true,
+  "brochure_error": null
 }

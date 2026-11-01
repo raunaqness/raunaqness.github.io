@@ -8,7 +8,7 @@ Source: https://www.carwale.com/honda-cars/amaze/
 - **Launched:** 12/04/2024
 - **Rating:** 4.61
 - **Review Count:** 77
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/7/2959/wta03qm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/7/2959/wta03qm.pdf
 
 ## Key specs
 

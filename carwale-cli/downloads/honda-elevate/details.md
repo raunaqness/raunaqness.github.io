@@ -8,7 +8,7 @@ Source: https://www.carwale.com/honda-cars/elevate/
 - **Launched:** 10/06/2026
 - **Rating:** 4.19
 - **Review Count:** 9
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/7/3780/8bbsnrm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/7/3780/8bbsnrm.pdf
 
 ## Key specs
 

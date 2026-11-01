@@ -8,7 +8,7 @@ Source: https://www.carwale.com/hyundai-cars/creta/
 - **Launched:** 01/16/2024
 - **Rating:** 4.6
 - **Review Count:** 202
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/8/1729/rbg9frm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/8/1729/rbg9frm.pdf
 
 ## Key specs
 

@@ -8,7 +8,7 @@ Source: https://www.carwale.com/kia-cars/sonet/
 - **Launched:** 04/03/2024
 - **Rating:** 4.31
 - **Review Count:** 145
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/70/2815/hk34ptm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/70/2815/hk34ptm.pdf
 
 ## Key specs
 

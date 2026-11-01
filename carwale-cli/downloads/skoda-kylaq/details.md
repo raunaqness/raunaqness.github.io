@@ -8,7 +8,7 @@ Source: https://www.carwale.com/skoda-cars/kylaq/
 - **Launched:** 11/06/2024
 - **Rating:** 4.73
 - **Review Count:** 197
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/15/2781/v82rprm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/15/2781/v82rprm.pdf
 
 ## Key specs
 

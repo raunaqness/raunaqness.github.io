@@ -8,7 +8,7 @@ Source: https://www.carwale.com/kia-cars/syros/
 - **Launched:** 04/20/2026
 - **Rating:** 4.7
 - **Review Count:** 7
-- **Brochure:** https://stc.aeplcdn.com/f/brochure/70/3722/kh3dqtm.pdf (not downloaded: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>)
+- **Brochure:** https://stc.aeplcdn.com/f/brochure/70/3722/kh3dqtm.pdf
 
 ## Key specs
 

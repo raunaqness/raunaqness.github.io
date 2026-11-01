@@ -1628,6 +1628,6 @@
     }
   ],
   "brochure_url": "https://stc.aeplcdn.com/f/brochure/70/2815/hk34ptm.pdf",
-  "brochure_downloaded": false,
-  "brochure_error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+  "brochure_downloaded": true,
+  "brochure_error": null
 }
